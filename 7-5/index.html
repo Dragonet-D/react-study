@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../bower_components/react/react.js"></script>
+    <script src="../bower_components/react/react-dom.min.js"></script>
+    <script src="../bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+<div id="box"></div>
+<script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <div>
+            <h1>Hello World!</h1>
+              <Dpp/>
+          </div>
+        )
+      }
+    }
+    class Dpp extends React.Component{
+      render(){
+        return(
+          <h2>hahaha</h2>
+        )
+      }
+    }
+    ReactDOM.render(<App/>,document.getElementById('box'))
+    /*
+    组件的三个生命周期状态
+        Mount：插入真实DOM
+        Update：被重新渲染
+        Unmount：被移除真实DOM
+
+    * */
+</script>
+</body>
+</html>
