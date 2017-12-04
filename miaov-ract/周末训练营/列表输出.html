@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../vendor/react.development.js"></script>
+  <script src="../vendor/react-dom.development.js"></script>
+  <script src="../vendor/babel.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/babel">
+  /**
+   *
+   * React 中没有模板 语法概念 插值标识中只支持表达式,不支持语句
+   *
+   *
+   *
+   * */
+    // 根据数组中的内容生成一个包含有结构的新数组
+    // <li>内容</li>
+    // 通过数组生成的结构,每一个元素必须包含一个key属性,同时这个key属性的值必须是唯一的
+  let users = ['aa', 'a', 'e'];
+  let obj = {left: 100, right: 200};
+  ReactDOM.render(
+      <ul>
+        {
+          users.map((user, index) => {
+            return <li key={index}>{user}</li>
+          })
+        }
+        {
+          // Object.keys(obj) 返回数组
+          Object.keys(obj).map(key => {
+            return <li key={key}>{key}</li>
+          })
+        }
+      </ul>,
+    document.querySelector('#app')
+  )
+</script>
+</body>
+</html>

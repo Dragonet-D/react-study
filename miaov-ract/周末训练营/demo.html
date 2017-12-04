@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../vendor/react.development.js"></script>
+  <script src="../vendor/react-dom.development.js"></script>
+  <script src="../vendor/babel.min.js"></script>
+  <script src="../vendor/data.js"></script>
+  <style>
+    .panel {
+      border: 1px solid #000;
+      width: 80%;
+    }
+
+    .title {
+      margin: 0;
+      padding: 10px;
+      background: #ccc;
+    }
+
+    p.message {
+      color: #aaa;
+    }
+
+    p.vip {
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/babel">
+  class Group extends React.Component {
+    render() {
+      return (
+          <div>
+            <h2 className="title">{this.props.data.name}</h2>
+            <List data={this.props.data.list}></List>
+          </div>
+      )
+    }
+  }
+
+  class Panel extends React.Component {
+    render() {
+      return (
+          <div className="panel">
+            {
+              Object.keys(this.props.data).map((item, index) => {
+                return <Group
+                    key={index}
+                    data={this.props.data[item]}
+                />
+              })
+            }
+          </div>
+      )
+    }
+  }
+
+  class List extends React.Component {
+    render() {
+      return (
+          <ul>
+            {
+              this.props.data.map((item, index) => {
+                return (
+                    <li key={index}>
+                      <p className={item.vip ? 'vip' : ''}>{item.username}</p>
+                      <p className="message">{item.message}</p>
+                    </li>
+                )
+              })
+            }
+          </ul>
+      )
+    }
+  }
+
+  ReactDOM.render(
+      <Panel data={dataList}>
+
+      </Panel>,
+    document.querySelector('#app')
+  )
+</script>
+</body>
+</html>

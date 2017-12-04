@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../vendor/react.development.js"></script>
+  <script src="../vendor/react-dom.development.js"></script>
+  <script src="../vendor/babel.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/babel">
+  let users = [1, 2, 3, 4, 5]
+  let users2 = [1, 2, 3, 4, 5, 9]
+
+  /**
+   *  函数复用:
+   *    组件: 拥有独立功能的模块
+   *  React还提供了组件的另一种使用方式, 标签化
+   *
+   *  标签化传参:  通过标签属性
+   *  props: 接收来自标签上的所有属性
+   *  props = {
+   *    data: users,
+   *    a: '1'
+   *  }
+   * */
+  function List(props) {
+    return props.data.map((item, index) => {
+      return <li key={index}>{item}</li>
+    })
+  }
+
+  ReactDOM.render(
+      <div>
+        <ul>
+          {/*List(users)*/}
+        </ul>
+        <ul>
+          {/*List(users2)*/}
+        </ul>
+        <ul>
+          <List data={users2}/>
+        </ul>
+      </div>,
+    document.querySelector('#app')
+  )
+</script>
+</body>
+</html>
