@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import HelloReact from 'components/HelloReact/HelloReact'
 
 import './common/style/goodsSort.css';
 import goodsSortData from './common/data/goodsSortData';
@@ -80,7 +81,11 @@ class App extends React.Component {
   }
 }
 
+// ReactDOM.render(
+//   <App/>,
+//   document.querySelector('#root')
+// );
 ReactDOM.render(
-  <App/>,
-  document.querySelector('#root')
-);
+  <HelloReact name='React!'/>,
+  document.querySelector('#test')
+)
