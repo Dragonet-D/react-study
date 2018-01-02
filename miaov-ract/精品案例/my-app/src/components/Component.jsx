@@ -21,4 +21,11 @@ class MyComponent extends Component {
     在装配期间,React并不会调用带有初始属性的componentWillReceiveProps方法.其仅会调用该方法若果某些组件的属性可更新.调用this.setState通常不会触发componentWillReceiveProps.
     */
   }
+
+  shouldComponentUpdate() {
+    /*
+    使用showComponentUpdate()以让React知道当前状态或属性的改变是否不影响组件的输出.默认行为时每一次状态的改变重渲,在大部分情况下你应该依赖于默认行为.
+
+    * */
+  }
 }

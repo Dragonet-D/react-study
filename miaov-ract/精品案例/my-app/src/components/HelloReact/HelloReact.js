@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Root from './../Root';
 
 class HelloReact extends Component {
   render() {
@@ -7,6 +8,7 @@ class HelloReact extends Component {
         Hello {this.props.name}
         <Timer/>
         <TodoApp/>
+        <Root/>
       </div>
     )
   }
