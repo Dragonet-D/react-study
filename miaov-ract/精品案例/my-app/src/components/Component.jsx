@@ -29,3 +29,27 @@ class MyComponent extends Component {
     * */
   }
 }
+
+class Comment extends Component {
+  render() {
+    return (
+      <div className="Comment">
+        <div className="UserInfo">
+          <img src={this.props.author.avatarUrl}
+               alt={this.props.author.name}
+               className="Avatar"
+          />
+          <div className="UserInfo-name">
+            {this.props.author.name}
+          </div>
+        </div>
+        <div className="Comment-text">
+          {this.props.text}
+        </div>
+        <div className="Comment-data">
+          {formatDate(this.props.date)}
+        </div>
+      </div>
+    )
+  }
+}

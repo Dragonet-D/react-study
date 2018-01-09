@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./../vendor/react.development.js"></script>
+  <script src="./../vendor/react-dom.development.js"></script>
+  <script src="./../vendor/babel.min.js"></script>
+  <script src="./data.js"></script>
+  <style>
+    .panel {
+      border: 1px solid #000;
+      width: 80%;
+    }
+
+    .title {
+      margin: 0;
+      padding: 10px;
+      background: #ccc;
+    }
+
+    p.vip {
+      color: red;
+    }
+
+    p.message {
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/babel">
+  class Item extends React.Component {
+    constructor(props) {
+      super(props)
+      this.state = {
+        show: this.props.show
+      }
+    }
+
+    changeList() {
+      this.props.onChange(this.props.index)
+      let show = !this.state.show
+      this.setState({
+        show
+      });
+      if (show) {
+        console.log('其他隐藏')
+      }
+      /*
+      * 1: 隐藏当前, 不需要改变其他状态
+      * 2: 展开当前, 隐藏其他项的状态
+      *
+      * */
+    }
+
+    render() {
+      return (
+        <div>
+          <h2 onClick={this.changeList.bind(this)}>{this.props.data.name}</h2>
+          {
+            this.state.show ? <List list={this.props.data.list}/> : ''
+          }
+        </div>
+      )
+    }
+  }
+
+  class List extends React.Component {
+    render() {
+      return (
+        <ul>
+          {
+            this.props.list.map((item, index) => {
+              return (
+                <li key={index}>
+                  <p className="vip">{item.username}</p>
+                  <p className="message">{item.message}</p>
+                </li>
+              )
+            })
+          }
+        </ul>
+      )
+    }
+  }
+
+  class Penel extends React.Component {
+    constructor(props) {
+      super(props)
+      this.state = {
+        showList: [true, false, false]
+      }
+      this.changeList = this.changeList.bind(this)
+    }
+
+    changeList(index) {
+      // 需要让当前第几个显示出来
+      let showList = this.state.showList.map((value, i) => {
+        if (i === index) {
+          return true
+        }
+        return false
+      })
+      this.setState({
+        showList
+      })
+    }
+
+    setShow() {
+      let list = Object.keys(dataList).map((val, index) => {
+        return <Item
+          data={dataList[val]}
+          key={index}
+          show={this.state.showList[index]}
+          onChange={this.changeList}
+          index={index}
+        />
+      });
+      return list
+    }
+
+    render() {
+      return (
+        <div>
+          <div className="panel">
+            {this.setShow()}
+          </div>
+        </div>
+      )
+    }
+  }
+
+  /*
+    class TestReact extends React.Component {
+      constructor() {
+        super()
+        this.state = {
+          testArray: [
+            {
+              name: "Jack",
+              age: 18
+            },
+            {
+              name: 'Rose',
+              age: 16
+            }
+          ]
+        }
+      }
+
+      itemClick(index) {
+        console.log(index)
+        this.props.onItemClick(index)
+      }
+
+      render() {
+        return (
+          <ul>
+            {
+              this.state.testArray.map((item, index) => {
+                return (
+                  <li
+                    key={index}
+                    onClick={this.itemClick.bind(this, index)}
+                  >
+                    <span>{item.name}</span>
+                    <span>{item.age}</span>
+                  </li>
+                )
+              })
+            }
+            {
+              this.props.testProps.map((item, index) => {
+                return (
+                  <li key={index}>{item.test}</li>
+                )
+              })
+            }
+          </ul>
+        )
+      }
+    }
+  */
+  ReactDOM.render(
+    <Penel/>,
+    document.getElementById('app')
+  )
+</script>
+</body>
+</html>

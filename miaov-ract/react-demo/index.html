@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./../vendor/react.development.js"></script>
+  <script src="./../vendor/react-dom.development.js"></script>
+  <script src="./../vendor/babel.min.js"></script>
+</head>
+<body>
+<div class="container" id="studentInfo"></div>
+<script type="text/babel">
+  var StudentApp = React.createClass({
+    render() {
+      return (
+        <div>
+          这是React
+        </div>
+      )
+    }
+  })
+  ReactDOM.render(
+    <StudentApp/>,
+    document.getElementById('studentInfo')
+  )
+</script>
+</body>
+</html>
