@@ -29,6 +29,12 @@
     p.message {
       color: #aaa;
     }
+
+    div.listWrap {
+      height: 0;
+      overflow: hidden;
+      transition: .5s;
+    }
   </style>
 </head>
 <body>
@@ -40,6 +46,22 @@
       this.state = {
         show: this.props.show
       }
+    }
+
+    componentDidMount() {
+      console.log('组件已经被渲染到DOM')
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+      //console.log(nextProps)
+      //console.log(nextState)
+      if (this.state.show !== nextProps.show) {
+        this.setState({
+          show: nextProps.show
+        })
+      }
+      // 更新组件 true
+      return true
     }
 
     changeList() {
@@ -61,10 +83,13 @@
     render() {
       return (
         <div>
-          <h2 onClick={this.changeList.bind(this)}>{this.props.data.name}</h2>
-          {
-            this.state.show ? <List list={this.props.data.list}/> : ''
-          }
+          <h2
+            className="title"
+            onClick={this.changeList.bind(this)}
+          >{this.props.data.name}</h2>
+          <div className="listWrap">
+            <List list={this.props.data.list}/>
+          </div>
         </div>
       )
     }
