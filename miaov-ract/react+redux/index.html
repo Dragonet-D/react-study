@@ -48,8 +48,17 @@
       }
     }
 
+    showList(show) {
+      let list = this.refs.list
+      if (show) {
+        list.style.height = list.scrollHeight + 'px'
+      } else {
+        list.style.height = 0
+      }
+    }
+
     componentDidMount() {
-      console.log('组件已经被渲染到DOM')
+      this.showList(this.state.show)
     }
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -60,8 +69,11 @@
           show: nextProps.show
         })
       }
+      if (this.state.show !== nextState.show) {
+        this.showList(nextState.show)
+      }
       // 更新组件 true
-      return true
+      return false
     }
 
     changeList() {
@@ -71,7 +83,7 @@
         show
       });
       if (show) {
-        console.log('其他隐藏')
+        // console.log('其他隐藏')
       }
       /*
       * 1: 隐藏当前, 不需要改变其他状态
@@ -87,7 +99,7 @@
             className="title"
             onClick={this.changeList.bind(this)}
           >{this.props.data.name}</h2>
-          <div className="listWrap">
+          <div className="listWrap" ref="list">
             <List list={this.props.data.list}/>
           </div>
         </div>
