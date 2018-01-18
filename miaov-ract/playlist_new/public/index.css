@@ -1,0 +1,103 @@
+body {
+    background: #f1f1f1;
+}
+body,
+h2,
+p {
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+}
+td,
+th {
+    padding: 0;
+    text-align: center;
+}
+input {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+input[type="text"] {
+    margin: 0 3px;
+    padding: 0 3px;
+    width: 140px;
+    height: 24px;
+    border: 1px solid #000;
+}
+input[type="button"] {
+    margin: 0 3px;
+    font: 12px/24px "宋体";
+    height: 24px;
+}
+
+#musicApp {
+    margin: 50px auto;
+    width: 514px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 10px;
+}
+header {
+    text-align: center;
+}
+.title {
+   font: bold 16px/36px "微软雅黑";
+}
+
+.main {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main th {
+    font-size: 14px;
+    font-weight: normal;
+    height: 30px;
+    background: #f1f1f1;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.main td {
+    font-size: 12px;
+    height: 28px;
+    border-bottom: 1px solid #eee;
+}
+.main tr:hover {
+    background: #eafdfc;
+}
+.main .like {
+    background: #fcece4;
+}
+.main .like:hover {
+    background: #fee3d5;
+}
+.main .selected {
+    background: #f6fccf;
+}
+.main .selected:hover {
+    background: #f6febe;
+}
+.main a {
+    cursor: pointer;
+    color: blue;
+}
+.main a:hover {
+    color: red;
+}
+footer {
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.info {
+    height: 30px;
+    line-height: 30px;
+}
+.align-right {
+    float: right;
+    color: #666;
+}
