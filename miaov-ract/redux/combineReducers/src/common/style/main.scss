@@ -1,0 +1,41 @@
+
+
+button{border: none; outline: none; cursor: pointer;}
+
+#hhh{}
+
+.counterBox{
+    width: 479px; background: url('img/bg.png') no-repeat; box-sizing: border-box; border-top: 1px solid transparent;
+    button.addCounter{
+        width: 161px; height: 59px; border: none; background: url('img/addBtn.png');
+    }
+
+    .panel{ margin-top: 130px; padding: 0 0 20px 44px; background: #303030; }
+
+    .counterPanel{
+
+        .counter{
+
+            button{ vertical-align: middle; }
+            .sub{ width: 52px; height: 44px; background: url('img/sub.png'); }
+            .add{ width: 52px; height: 44px; background: url('img/add.png'); }
+            span{ display: inline-block; text-align: center; width: 60px; font-size: 32px; color: #eee; vertical-align: middle;}
+            .addIfOdd{  width: 109px; height: 42px; background: url('img/addOdd.png') no-repeat 0 -2px; }
+            .addAsync{ width: 109px; height: 45px; background: url('img/addsync.png') no-repeat 0 1px;; }
+            .add, .addIfOdd, .addAsync{ margin-right: 8px; }
+
+        }
+    }
+
+    .dashboard{
+        padding: 20px 44px; background: #212221; border-radius: 0 0 20px 20px / 0 0 20px 20px ;
+        span{ display: inline-block; width: 100px; color: #aaa; line-height: 26px; font-size: 16px}
+        .allSel{}
+        .maximum{}
+        .allCount{}
+    }
+
+}
+
+.name{  }
+.nameList{ position: absolute; top: 180px; width: 100%; border-top: 1px solid #eee; }
