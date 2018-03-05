@@ -85,6 +85,7 @@ export default class GlobalHeader extends PureComponent {
           className={styles.trigger}
           type={collapsed ? 'menu-unfold' : 'menu-fold'}
           onClick={this.toggle}
+          style={{float: 'left'}}
         />
         <div className={styles.right}>
           <HeaderSearch

@@ -42,11 +42,7 @@ for (let i = 0; i < 7; i += 1) {
   });
 }
 
-@connect(({chart, loading}) => ({
-  chart,
-  loading: loading.effects['chart/fetch'],
-}))
-export default class Analysis extends Component {
+class Analysis extends Component {
   state = {
     salesType: 'all',
     currentTabKey: '',
@@ -54,6 +50,9 @@ export default class Analysis extends Component {
   };
 
   componentDidMount() {
+    // const {match, routerData} = this.props;
+    // console.log(routerData[match.path].name); // eslint-disable-line
+    // console.log(match.path); // eslint-disable-line
     this.props.dispatch({
       type: 'chart/fetch',
     });
@@ -115,6 +114,7 @@ export default class Analysis extends Component {
   render() {
     const {rangePickerValue, salesType, currentTabKey} = this.state;
     const {chart, loading} = this.props;
+    // console.log(routerData); // eslint-disable-line
     const {
       visitData,
       visitData2,
@@ -486,3 +486,12 @@ export default class Analysis extends Component {
     );
   }
 }
+
+export default connect(({chart, loading}) => {
+  // console.log(chart); // eslint-disable-line
+  // console.log(loading); // eslint-disable-line
+  return ({
+    chart,
+    loading: loading.effects['chart/fetch'],
+  });
+})(Analysis);

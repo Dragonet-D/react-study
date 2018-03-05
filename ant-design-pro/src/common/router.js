@@ -75,14 +75,16 @@ export const getRouterData = (app) => {
     },
     '/dashboard/analysis': {
       component: dynamicWrapper(app, ['chart'], () => import('../routes/Dashboard/Analysis')),
+      name: '仪表板',
     },
     '/dashboard/monitor': {
       component: dynamicWrapper(app, ['monitor'], () => import('../routes/Dashboard/Monitor')),
+      name: '高级图',
     },
     '/dashboard/workplace': {
       component: dynamicWrapper(app, ['project', 'activities', 'chart'], () => import('../routes/Dashboard/Workplace')),
       // hideInBreadcrumb: true,
-      name: '工作台',
+      name: 'workplace',
       authority: 'admin',
     },
     '/form/basic-form': {
@@ -169,6 +171,7 @@ export const getRouterData = (app) => {
   };
   // Get name from ./menu.js or just set it in the router data.
   const menuData = getFlatMenuData(getMenuData());
+  // console.log(menuData);
 
   // Route configuration data
   // eg. {name,authority ...routerConfig }

@@ -6,7 +6,7 @@ const menuData = [{
   path: 'dashboard',
   children: [
     {
-      name: '图图图',
+      name: '仪表板',
       path: 'analysis',
     }, {
       name: '高级图',
@@ -125,7 +125,7 @@ const menuData = [{
     },
   ],
 }];
-
+console.log(menuData);
 function formatter(data, parentPath = '/', parentAuthority) {
   return data.map((item) => {
     let {path} = item;
@@ -143,5 +143,6 @@ function formatter(data, parentPath = '/', parentAuthority) {
     return result;
   });
 }
+// console.log(formatter(menuData)); // eslint-disable-line
 
 export const getMenuData = () => formatter(menuData);

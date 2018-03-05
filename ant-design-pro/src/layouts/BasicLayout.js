@@ -93,8 +93,8 @@ class BasicLayout extends React.PureComponent {
   }
 
   getPageTitle() {
-    const { routerData, location } = this.props;
-    const { pathname } = location;
+    const {routerData, location} = this.props;
+    const {pathname} = location;
     let title = 'Ant Design Pro';
     if (routerData[pathname] && routerData[pathname].name) {
       title = `${routerData[pathname].name} - Ant Design Pro`;
@@ -130,7 +130,7 @@ class BasicLayout extends React.PureComponent {
       payload: type,
     });
   }
-  handleMenuClick = ({ key }) => {
+  handleMenuClick = ({key}) => {
     if (key === 'triggerError') {
       this.props.dispatch(routerRedux.push('/exception/trigger'));
       return;
