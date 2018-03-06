@@ -37,7 +37,6 @@ export default class NewPage extends React.Component {
   };
 
   testdis() {
-    console.log(this.props);
     const {dispatch} = this.props;
     dispatch({
       type: 'test/testpayload',
@@ -48,6 +47,7 @@ export default class NewPage extends React.Component {
   render() {
     // const {test} = this.props;
     // console.log(test);
+    console.log(this.props);
     return (
       <div className={styles.new_page}>
         <Card title="这是一个文本编辑器">
