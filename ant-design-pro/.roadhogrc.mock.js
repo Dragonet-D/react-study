@@ -131,6 +131,11 @@ const proxy = {
       "path": "/base/category/list"
     });
   },
+  'GET /api/test/api': (req, res) => {
+    res.send({
+      test: '这是一个测试的接口'
+    })
+  }
 };
 
 export default noProxy ? {} : delay(proxy, 1000);

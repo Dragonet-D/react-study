@@ -42,7 +42,13 @@ for (let i = 0; i < 7; i += 1) {
   });
 }
 
-class Analysis extends Component {
+@connect(({chart, loading}) => {
+  return ({
+    chart,
+    loading: loading.effects['chart/fetch'],
+  });
+})
+export default class Analysis extends Component {
   state = {
     salesType: 'all',
     currentTabKey: '',
@@ -486,12 +492,3 @@ class Analysis extends Component {
     );
   }
 }
-
-export default connect(({chart, loading}) => {
-  // console.log(chart); // eslint-disable-line
-  // console.log(loading); // eslint-disable-line
-  return ({
-    chart,
-    loading: loading.effects['chart/fetch'],
-  });
-})(Analysis);

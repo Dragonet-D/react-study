@@ -1,0 +1,46 @@
+import {testApi} from '../services/api';
+
+export default {
+  namespace: 'test',
+
+  state: {
+    data: [],
+  },
+
+  effects: {
+    * fetch(_, {call, put}) {
+      const response = yield call(testApi);
+      // console.log(response);
+      yield put({
+        type: 'save',
+        payload: response.test,
+      });
+    },
+    * testpayload({payload}) {
+      console.log(payload);
+    },
+  },
+
+  reducers: {
+    save(state, {payload}) {
+      return {
+        ...state,
+        ...payload,
+      };
+    },
+    clear() {
+      return {
+        visitData: [],
+        visitData2: [],
+        salesData: [],
+        searchData: [],
+        offlineData: [],
+        offlineChartData: [],
+        salesTypeData: [],
+        salesTypeDataOnline: [],
+        salesTypeDataOffline: [],
+        radarData: [],
+      };
+    },
+  },
+};

@@ -1,4 +1,4 @@
-import { queryTags } from '../services/api';
+import {queryTags} from '../services/api';
 
 export default {
   namespace: 'monitor',
@@ -8,7 +8,7 @@ export default {
   },
 
   effects: {
-    *fetchTags(_, { call, put }) {
+    * fetchTags(_, {call, put}) {
       const response = yield call(queryTags);
       yield put({
         type: 'saveTags',

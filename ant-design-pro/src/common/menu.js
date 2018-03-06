@@ -125,7 +125,6 @@ const menuData = [{
     },
   ],
 }];
-console.log(menuData);
 function formatter(data, parentPath = '/', parentAuthority) {
   return data.map((item) => {
     let {path} = item;
