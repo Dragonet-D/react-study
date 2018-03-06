@@ -16,8 +16,12 @@ export default {
         payload: response.test,
       });
     },
-    * testpayload({payload}) {
+    * testpayload({payload}, {put}) {
       console.log(payload);
+      yield put({
+        type: 'save',
+        payload,
+      });
     },
   },
 
