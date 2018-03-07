@@ -133,7 +133,7 @@ const proxy = {
   },
   'GET /api/test/api': (req, res) => {
     res.send({
-      test: '这是一个测试的接口'
+      test: ['这是一个测试的接口']
     })
   }
 };

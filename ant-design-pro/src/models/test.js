@@ -17,7 +17,7 @@ export default {
       });
     },
     * testpayload({payload}, {put}) {
-      console.log(payload);
+      // console.log(payload);
       yield put({
         type: 'save',
         payload,
@@ -34,16 +34,7 @@ export default {
     },
     clear() {
       return {
-        visitData: [],
-        visitData2: [],
-        salesData: [],
-        searchData: [],
-        offlineData: [],
-        offlineChartData: [],
-        salesTypeData: [],
-        salesTypeDataOnline: [],
-        salesTypeDataOffline: [],
-        radarData: [],
+        data: [],
       };
     },
   },
