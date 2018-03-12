@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import {BrowserRouter, Switch, Link, Route, Redirect} from 'react-router-dom';
 import Main from './Root';
 
+let data = new Date();
+let o = {
+  'mmm': data.getMonth() + 1,
+}
+
 class Index extends Component {
   render() {
     return (
