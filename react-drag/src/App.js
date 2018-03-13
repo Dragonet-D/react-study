@@ -4,7 +4,8 @@ import {DragDropContext} from 'react-dnd';
 import Board from './components/board/board';
 import './App.css';
 
-class App extends Component {
+@DragDropContext(HTML5Backend)
+export default class App extends Component {
   render() {
     return (
         <div className="App">
@@ -13,5 +14,3 @@ class App extends Component {
     );
   }
 }
-
-export default DragDropContext(HTML5Backend)(App);
