@@ -79,7 +79,6 @@ export default class TableExampleComplex extends Component {
   handleChange = (event) => {
     this.setState({height: event.target.value});
   };
-
   render() {
     return (
       <div>
@@ -90,7 +89,6 @@ export default class TableExampleComplex extends Component {
           fixedFooter={this.state.fixedFooter}
           selectable={this.state.selectable}
           multiSelectable={this.state.multiSelectable}
-          allRowsSelected
         >
           <TableHeader
             displaySelectAll={this.state.showCheckboxes}
