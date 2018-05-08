@@ -90,6 +90,7 @@ export default class TableExampleComplex extends Component {
           fixedFooter={this.state.fixedFooter}
           selectable={this.state.selectable}
           multiSelectable={this.state.multiSelectable}
+          allRowsSelected
         >
           <TableHeader
             displaySelectAll={this.state.showCheckboxes}
