@@ -1,0 +1,136 @@
+.pageWrap {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.wrap {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.wrap img {
+    max-width: 100%;
+}
+#logo {
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.headerDivider {
+    float: left;
+    margin: 10px 0;
+    height: 44px;
+}
+#nav {
+    float: left;
+    margin-left: 30px;
+    background: none;
+    border: none;
+    line-height: 62px;
+}
+#nav a {
+    color: #fff;
+}
+#nav .ant-menu-item-selected a{
+    color: #1890ff;
+}
+.xsNav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.main {
+    flex: 1;
+}
+.main .wrap {
+    border: 1px solid #ccc;
+    border-top: none;
+    overflow: hidden;
+}
+.indexSider {
+    border-right: 1px solid #ccc;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+#indexMenu {
+    border-right: none;
+}
+#indexMenu li {
+    margin-right: -1px;
+    transition: none;
+    text-align: center;
+    border-right: 3px solid rgba(0, 0, 0, 0);
+}
+#indexMenu li:hover,
+#indexMenu .ant-menu-item-selected {
+    background: #e6f7ff;
+    border-right-color:#1890ff;
+}
+#indexXsMenu {
+    display: flex;
+}
+#indexXsMenu li{
+    flex: 1;
+    float: none;
+    text-align: center;
+}
+.indexList {
+    padding: 0 10px 20px;
+}
+.indexList p {
+    margin: 0;
+}
+.replyList .ant-list-item-meta-avatar {
+    display: block;
+}
+.ant-list-item-action {
+    margin-left: 50px;
+}
+.ant-list-item-meta {
+    min-width: 200px;
+    align-items: center;
+}
+.userAvatar {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.userInfo {
+    text-align: center;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+.userList {
+    line-height: 32px;
+}
+.userList .ant-list-item {
+    position: relative;
+}
+.userList .ant-list-item * {
+    vertical-align: middle;
+}
+.userList .ant-list-item-content {
+    display: block;
+}
+.userList .userName {
+    margin: 0 10px 0 5px;
+}
+.userList h4 {
+    display: inline-block;
+    margin: 0;
+}
+.userList time {
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+@media all and (max-width: 767px) {
+    .userList h4 {
+        display: block;
+    }
+
+}
