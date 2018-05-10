@@ -87,12 +87,22 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": true
+        }
+      ]
     ]
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "devDependencies": {
+    "babel-plugin-import": "^1.7.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "react-app-rewired": "^1.5.2"
