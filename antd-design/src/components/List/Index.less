@@ -2,11 +2,22 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
+  padding: 0 4px;
+  margin: 0 4px;
 }
 .alarm_list {
   .alarm_list_title {
     display: flex;
     justify-content: center;
+    div {
+      height: 36px;
+      line-height: 36px;
+      border: 1px dashed blue;
+      padding: 0 4px;
+      margin: 0 4px;
+      cursor: move;
+    }
   }
   .ant-list-item-content {
     display: flex;

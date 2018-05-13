@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { List } from 'antd';
+import {
+  List,
+  Tooltip,
+} from 'antd';
+import Sortable from './../../components/Drag/Sortable';
 import './Index.less';
 
 const dataSource = [{
@@ -14,36 +18,47 @@ const dataSource = [{
   address: '西湖区湖底公园1号'
 }];
 
-const columns = [{
-  title: '姓名',
-  dataIndex: 'name',
-  key: 'name',
-  className: 'alarm_name',
-}, {
-  title: '年龄',
-  dataIndex: 'age',
-  key: 'age',
-  className: 'alarm_age',
-}, {
-  title: '住址',
-  dataIndex: 'address',
-  key: 'address',
-  className: 'alarm_address',
-}];
-
 export default class IndexList extends Component{
+  state = {
+    columns: [{
+      title: '姓名',
+      dataIndex: 'name',
+      key: 'name',
+      className: 'alarm_name',
+    }, {
+      title: '年龄',
+      dataIndex: 'age',
+      key: 'age',
+      className: 'alarm_age',
+    }, {
+      title: '住址',
+      dataIndex: 'address',
+      key: 'address',
+      className: 'alarm_address',
+    }]
+  }
+  cardDrag = (e) => {
+    console.log(e);
+    this.setState({
+      columns: e,
+    })
+  }
   render() {
+    const { columns } = this.state;
     return(
       <div className="alarm_list">
+        <Sortable
+          drag={columns}
+          cardDrag={this.cardDrag}
+        />
         <div className="alarm_list_title">
           {
             columns.map(item =>(
               <div
                 key={item.key}
                 className={item.className || ''}
-                title={item.title}
               >
-                {item.title}
+                <span>{item.title}</span>
               </div>
             ))
           }
@@ -62,8 +77,14 @@ export default class IndexList extends Component{
                       <div
                         key={items.key}
                         className={items.className || ''}
-                        title={item[items.dataIndex]}
-                      >{item[items.dataIndex]}</div>
+                      >
+                        <Tooltip
+                          title={item[items.dataIndex]}
+                          placement="bottom"
+                        >
+                          {item[items.dataIndex]}
+                        </Tooltip>
+                      </div>
                     )
                   })
                 }

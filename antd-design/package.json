@@ -4,7 +4,12 @@
   "private": true,
   "dependencies": {
     "antd": "^3.5.1",
+    "immutability-helper": "^2.7.0",
+    "mobx": "^4.2.1",
+    "mobx-react": "^5.1.2",
     "react": "^16.3.2",
+    "react-dnd": "^2.6.0",
+    "react-dnd-html5-backend": "^2.6.0",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
   },
@@ -16,6 +21,8 @@
   },
   "devDependencies": {
     "babel-plugin-import": "^1.7.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "babel-preset-stage-2": "^6.24.1",
     "i": "^0.3.6",
     "react-app-rewire-less": "^2.1.1",
     "react-app-rewired": "^1.5.2"
