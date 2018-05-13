@@ -20,6 +20,7 @@ const cardTarget = {
       return;
     }
     const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
+    console.log(hoverBoundingRect);
     const hoverMiddleY = (hoverBoundingRect.bottom - hoverBoundingRect.top) / 2;
     const clientOffset = monitor.getClientOffset();
     const hoverClientY = clientOffset.y - hoverBoundingRect.top;
