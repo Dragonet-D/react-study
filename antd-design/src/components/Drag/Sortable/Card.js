@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { DragSource, DropTarget } from 'react-dnd';
 import ItemTypes from './ItemTypes';
+import styles from './Card.less';
 
 const cardSource = {
   beginDrag(props) {
@@ -34,6 +35,8 @@ const cardTarget = {
   },
 };
 
+
+
 class Card extends Component {
   render() {
     const {
@@ -45,14 +48,14 @@ class Card extends Component {
     const opacity = isDragging ? 0 : 1;
 
     return connectDragSource(
-      connectDropTarget(<div style={{ opacity }}>{text}</div>),
+      connectDropTarget(<div className={styles.card_item} style={{ opacity }}>{text}</div>),
     );
   }
 }
 
-export default DropTarget(ItemTypes.CARD, cardTarget, connect => ({
+export default @DropTarget(ItemTypes.CARD, cardTarget, connect => ({
   connectDropTarget: connect.dropTarget(),
-}))(DragSource(ItemTypes.CARD, cardSource, (connect, monitor) => ({
+}))(@DragSource(ItemTypes.CARD, cardSource, (connect, monitor) => ({
   connectDragSource: connect.dragSource(),
   isDragging: monitor.isDragging(),
-}))(Card))
+}))(S))
