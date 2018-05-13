@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { List } from 'antd';
+import './Index.less';
 
 const dataSource = [{
   key: '1',
@@ -30,8 +31,42 @@ const columns = [{
 export default class IndexList extends Component{
   render() {
     return(
-      <div>
-        list
+      <div className="alarm_list">
+        <div className="alarm_list_title">
+          {
+            columns.map(item =>(
+              <div
+                key={item.key}
+              >
+                {item.title}
+              </div>
+            ))
+          }
+        </div>
+        <List
+          dataSource={dataSource}
+          size="small"
+          renderItem={
+            item => (
+              <List.Item
+                key={item.key}
+              >
+                {
+                  columns.map((items) => {
+                    return (
+                      <div
+                        key={items.key}
+                        className={items.className || ''}
+                      >{item[items.dataIndex]}</div>
+                    )
+                  })
+                }
+              </List.Item>
+            )
+          }
+        >
+
+        </List>
       </div>
     )
   }
