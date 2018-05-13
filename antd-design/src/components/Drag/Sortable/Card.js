@@ -21,9 +21,9 @@ const cardTarget = {
     }
     const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
     console.log(hoverBoundingRect);
-    const hoverMiddleY = (hoverBoundingRect.bottom - hoverBoundingRect.top) / 2;
+    const hoverMiddleY = (hoverBoundingRect.right - hoverBoundingRect.left) / 2;
     const clientOffset = monitor.getClientOffset();
-    const hoverClientY = clientOffset.y - hoverBoundingRect.top;
+    const hoverClientY = clientOffset.x - hoverBoundingRect.left;
     if (dragIndex < hoverIndex && hoverClientY < hoverMiddleY) {
       return;
     }
