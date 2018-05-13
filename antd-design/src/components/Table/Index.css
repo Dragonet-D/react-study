@@ -1,0 +1,6 @@
+.ant-table-row , .columns_1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+}
