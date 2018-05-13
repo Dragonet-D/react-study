@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { DragSource, DropTarget } from 'react-dnd';
 import ItemTypes from './ItemTypes';
-import './Card.less';
 
 const cardSource = {
   beginDrag(props) {
@@ -46,7 +45,7 @@ class Card extends Component {
     const opacity = isDragging ? 0 : 1;
 
     return connectDragSource(
-      connectDropTarget(<div className="card_item" style={{ opacity }}>{text}</div>),
+      connectDropTarget(<div style={{ opacity }}>{text}</div>),
     );
   }
 }

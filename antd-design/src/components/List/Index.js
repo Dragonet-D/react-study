@@ -47,21 +47,11 @@ export default class IndexList extends Component{
     const { columns } = this.state;
     return(
       <div className="alarm_list">
-        <Sortable
-          drag={columns}
-          cardDrag={this.cardDrag}
-        />
         <div className="alarm_list_title">
-          {
-            columns.map(item =>(
-              <div
-                key={item.key}
-                className={item.className || ''}
-              >
-                <span>{item.title}</span>
-              </div>
-            ))
-          }
+          <Sortable
+            drag={columns}
+            cardDrag={this.cardDrag}
+          />
         </div>
         <List
           dataSource={dataSource}
