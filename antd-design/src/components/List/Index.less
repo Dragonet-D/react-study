@@ -1,8 +1,25 @@
+.alarm_list_item() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .alarm_list {
   .alarm_list_title {
     display: flex;
+    justify-content: center;
   }
   .ant-list-item-content {
     display: flex;
+    justify-content: center;
+  }
+  .alarm_name {
+    width: 200px;
+    .alarm_list_item();
+  }
+  .alarm_age {
+    .alarm_name;
+  }
+  .alarm_address {
+    .alarm_name;
   }
 }

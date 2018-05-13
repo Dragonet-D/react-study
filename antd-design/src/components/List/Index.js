@@ -4,7 +4,7 @@ import './Index.less';
 
 const dataSource = [{
   key: '1',
-  name: '胡彦斌',
+  name: '胡彦斌胡彦斌胡彦斌胡彦斌胡彦斌',
   age: 32,
   address: '西湖区湖底公园1号'
 }, {
@@ -18,14 +18,17 @@ const columns = [{
   title: '姓名',
   dataIndex: 'name',
   key: 'name',
+  className: 'alarm_name',
 }, {
   title: '年龄',
   dataIndex: 'age',
   key: 'age',
+  className: 'alarm_age',
 }, {
   title: '住址',
   dataIndex: 'address',
   key: 'address',
+  className: 'alarm_address',
 }];
 
 export default class IndexList extends Component{
@@ -37,6 +40,8 @@ export default class IndexList extends Component{
             columns.map(item =>(
               <div
                 key={item.key}
+                className={item.className || ''}
+                title={item.title}
               >
                 {item.title}
               </div>
@@ -57,6 +62,7 @@ export default class IndexList extends Component{
                       <div
                         key={items.key}
                         className={items.className || ''}
+                        title={item[items.dataIndex]}
                       >{item[items.dataIndex]}</div>
                     )
                   })
