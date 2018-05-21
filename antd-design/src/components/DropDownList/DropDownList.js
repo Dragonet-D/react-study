@@ -21,10 +21,10 @@ export default class DropDownList extends Component {
       <div ref={(node) => {this.container = node}}>
         <Dropdown
           overlay={menu}
-          trigger={['click']}
+          trigger={['click', 'hover']}
           getPopupContainer={() => this.container}
         >
-          <a className="ant-dropdown-link" href="#">
+          <a className="ant-dropdown-link">
             Hover me <Icon type="down" />
           </a>
         </Dropdown>
