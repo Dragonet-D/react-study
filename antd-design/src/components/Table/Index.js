@@ -1,44 +1,92 @@
 import React, { Component } from 'react';
-import { Table } from 'antd';
-import './Index.css';
+import { Table, Button } from 'antd';
 
-const dataSource = [{
+const data = [{
   key: '1',
-  name: '胡彦斌胡彦斌胡彦斌胡彦斌胡彦斌胡彦斌',
+  name: 'John Brown',
   age: 32,
-  address: '西湖区湖底公园1号',
+  address: 'New York No. 1 Lake Park',
 }, {
   key: '2',
-  name: '胡彦祖',
+  name: 'Jim Green',
   age: 42,
-  address: '西湖区湖底公园1号'
+  address: 'London No. 1 Lake Park',
+}, {
+  key: '3',
+  name: 'Joe Black',
+  age: 32,
+  address: 'Sidney No. 1 Lake Park',
+}, {
+  key: '4',
+  name: 'Jim Red',
+  age: 32,
+  address: 'London No. 2 Lake Park',
 }];
 
-const columns = [{
-  title: '姓名',
-  dataIndex: 'name',
-  key: 'name',
-  className: 'columns_1',
-  render: (name) => (<a title={name}>{ name }</a>)
-}, {
-  title: '年龄',
-  dataIndex: 'age',
-  key: 'age',
-  width: '100px',
-}, {
-  title: '住址',
-  dataIndex: 'address',
-  key: 'address',
-}];
 export default class IndexTable extends Component {
+  state = {
+    filteredInfo: null,
+    sortedInfo: null,
+  };
+  handleChange = (pagination, filters, sorter) => {
+    // console.log('Various parameters', pagination, filters, sorter);
+    console.log(sorter);
+    this.setState({
+      filteredInfo: filters,
+      sortedInfo: sorter,
+    });
+  }
+  clearFilters = () => {
+    this.setState({ filteredInfo: null });
+  }
+  clearAll = () => {
+    this.setState({
+      filteredInfo: null,
+      sortedInfo: null,
+    });
+  }
+  setAgeSort = () => {
+    this.setState({
+      sortedInfo: {
+        order: 'descend',
+        columnKey: 'age',
+      },
+    });
+  }
   render() {
-    return(
+    let { sortedInfo, filteredInfo } = this.state;
+    sortedInfo = sortedInfo || {};
+    filteredInfo = filteredInfo || {};
+    const columns = [{
+      title: 'Name',
+      dataIndex: 'name',
+      key: 'name',
+      sorter: true,
+    }, {
+      title: 'Age',
+      dataIndex: 'age',
+      key: 'age',
+      sorter: true,
+    }, {
+      title: 'Address',
+      dataIndex: 'address',
+      key: 'address',
+      sorter: true,
+    }];
+    return (
       <div>
+        <div className="table-operations">
+          <Button onClick={this.setAgeSort}>Sort age</Button>
+          <Button onClick={this.clearFilters}>Clear filters</Button>
+          <Button onClick={this.clearAll}>Clear filters and sorters</Button>
+        </div>
         <Table
-          dataSource={dataSource}
           columns={columns}
+          dataSource={data}
+          onChange={this.handleChange}
+          size="small"
         />
       </div>
-    )
+    );
   }
 }

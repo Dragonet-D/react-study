@@ -21,7 +21,6 @@ class Sortable extends Component {
   }
 
   render() {
-    console.log(this.props.drag);
     const { drag } = this.props;
     return (
       <div className="drag_wrap">
