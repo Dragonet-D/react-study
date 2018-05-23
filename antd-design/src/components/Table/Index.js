@@ -71,7 +71,7 @@ export default class IndexTable extends Component {
       title: 'Address',
       dataIndex: 'address',
       key: 'address',
-      sorter: true
+      sorter: true,
     }];
     return (
       <div>
