@@ -7,6 +7,6 @@ export default function userinfo (state = initialState, action) {
         case actionTypes.USERINFO_UPDATE:
             return action.data;
         default:
-            return state
+            return state;
     }
 }
