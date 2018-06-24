@@ -18,7 +18,7 @@ export default class Map extends Component {
         center: [103.784342, 1.352586],
         zoom: 12,
         layerUrl: "https://maps-{a-c}.onemap.sg/v3/Grey/{z}/{x}/{y}.png",
-        target: `map_${Math.random}`
+        target: `map_${Math.random}`,
     }
     componentDidMount() {
         const {
