@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import OlMap from "ol/map";
+import OlLayerTile from "ol/layer/tile";
+import OlSourceOsm from "ol/source/osm";
+import OlView from "ol/view";
+import OlProj from "ol/proj";
 
 export default class Map extends Component {
     constructor(props) {
@@ -13,7 +17,7 @@ export default class Map extends Component {
         },
         center: [103.784342, 1.352586],
         zoom: 12,
-        layerUrl: "https://map-{a-c}.onemap.sg/v3/Grey/{x}{y}.png",
+        layerUrl: "https://maps-{a-c}.onemap.sg/v3/Grey/{z}/{x}/{y}.png",
         target: `map_${Math.random}`
     }
     componentDidMount() {
@@ -23,6 +27,21 @@ export default class Map extends Component {
             target,
             layerUrl
         } = this.props;
+        this.map = new OlMap({
+            layers: [
+                new OlLayerTile({
+                    name:target,
+                    source: new OlSourceOsm({
+                        url: layerUrl
+                    })
+                })
+            ],
+            view: new OlView({
+                center: OlProj.fromLonLat(center),
+                zoom,
+            }),
+            target
+        })
     }
     render() {
         const {
