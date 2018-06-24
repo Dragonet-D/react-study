@@ -41,7 +41,7 @@ export default class Map extends Component {
                 zoom,
             }),
             target
-        })
+        });
     }
     render() {
         const {
