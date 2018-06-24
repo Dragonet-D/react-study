@@ -52,6 +52,6 @@ export default class Map extends Component {
         } = this.props;
         return (
             <div id={target}/>
-        )
+        );
     }
 }
