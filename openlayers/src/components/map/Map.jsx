@@ -97,7 +97,7 @@ export default class Map extends Component {
                             <div
                                 id={item.id}
                                 key={item.id}
-                                style={{ width: "30px", height: "30px", border: "1px solid red" }}
+                                style={{ width: "30px", height: "30px" }}
                             >
                                 <img
                                     src="//www.baidu.com/img/bd_logo1.png"
