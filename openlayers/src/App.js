@@ -1,10 +1,37 @@
-import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
 import Map from "./components/map/Map";
 
 class App extends Component {
+  state = {
+    data: [{
+      id: "id1",
+      center: [103.74943256378174, 1.3225763556778443]
+    }]
+  };
+  test = () => {
+    this.setState({
+      data: [,
+      {
+        id: "id2",
+        center: [103.8542, 1.3293]
+      }, {
+        id: "id3",
+        center: [103.85530471801756, 1.3291406454039345]
+      }, {
+        id: "id4",
+        center: [103.84435325860977, 1.38758564176523]
+      }]
+    })
+  };
   render() {
+    const { data } = this.state;
     return (
-      <Map/>
+      <div>
+        <button onClick={this.test}>click</button>
+        <Map dataSource={data}/>
+      </div>
     );
   }
 }

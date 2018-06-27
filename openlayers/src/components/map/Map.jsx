@@ -26,18 +26,19 @@ export default class Map extends Component {
             zoom,
             center,
             target,
-            layerUrl
+            layerUrl,
+            dataSource
         } = this.props;
         const marker = new OlOverlay({
             position: OlProj.fromLonLat([103.63532602787018, 1.3503457557834744]),
             positioning: 'center-center',
             element: document.getElementById('marker'),
             stopEvent: false
-          });
+        });
         this.map = new OlMap({
             layers: [
                 new OlLayerTile({
-                    name:target,
+                    name: target,
                     source: new OlSourceOsm({
                         url: layerUrl
                     })
@@ -50,6 +51,19 @@ export default class Map extends Component {
             target
         });
         this.map.addOverlay(marker);
+        
+    }
+    componentDidUpdate() {
+        const { dataSource } = this.props;
+        dataSource.forEach((item) => {
+            console.log(document.getElementById(item.id));
+            this.map.addOverlay(new OlOverlay({
+                position: OlProj.fromLonLat(item.center),
+                positioning: 'center-center',
+                element: document.getElementById(item.id),
+                stopEvent: false
+            }))
+        })
     }
     // //www.baidu.com/img/bd_logo1.png
     // [103.74943256378174, 1.3225763556778443]
@@ -61,7 +75,8 @@ export default class Map extends Component {
             zoom,
             center,
             target,
-            layerUrl
+            layerUrl,
+            dataSource
         } = this.props;
         return (
             <div>
@@ -69,14 +84,29 @@ export default class Map extends Component {
                     <div
                         id="marker"
                         title="Marker"
-                        style={{width:"30px", height:"30px", border: "1px solid red"}}
+                        style={{ width: "30px", height: "30px", border: "1px solid red" }}
                     >
                         <img
                             src="//www.baidu.com/img/bd_logo1.png"
                             alt=""
-                            style={{width: "100%", height: "100%"}}
+                            style={{ width: "100%", height: "100%" }}
                         />
                     </div>
+                    {
+                        dataSource.map(item => (
+                            <div
+                                id={item.id}
+                                key={item.id}
+                                style={{ width: "30px", height: "30px", border: "1px solid red" }}
+                            >
+                                <img
+                                    src="//www.baidu.com/img/bd_logo1.png"
+                                    alt=""
+                                    style={{ width: "100%", height: "100%" }}
+                                />
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         );
