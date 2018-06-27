@@ -4,7 +4,6 @@ import OlLayerTile from "ol/layer/tile";
 import OlSourceOsm from "ol/source/osm";
 import OlView from "ol/view";
 import OlProj from "ol/proj";
-import "ol/css/ol.css";
 
 export default class Map extends Component {
     constructor(props) {
