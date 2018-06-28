@@ -89,7 +89,7 @@ export default class Map extends Component {
                             >
                                 <img
                                     src="//www.baidu.com/img/bd_logo1.png"
-                                    alt=""
+                                    alt="picture"
                                     style={{ width: "100%", height: "100%" }}
                                 />
                             </div>
