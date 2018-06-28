@@ -21,19 +21,31 @@ export default class Map extends Component {
         layerUrl: "https://maps-{a-c}.onemap.sg/v3/Grey/{z}/{x}/{y}.png",
         target: `map_${Math.random}`,
     }
+    state = {
+        dataSource: [
+            {
+                id: "id2",
+                center: [103.8542, 1.3293]
+            }, {
+                id: "id3",
+                center: [103.85530471801756, 1.3291406454039345]
+            }, {
+                id: "id4",
+                center: [103.84435325860977, 1.38758564176523]
+            }, {
+                id: "id5",
+                center: [103.63532602787018, 1.3503457557834744]
+            }
+        ]
+    }
     componentDidMount() {
         const {
             zoom,
             center,
             target,
             layerUrl,
-            dataSource
         } = this.props;
-        const marker = new OlOverlay({
-            position: OlProj.fromLonLat([103.63532602787018, 1.3503457557834744]),
-            element: document.getElementById('marker'),
-            stopEvent: false
-        });
+        const { dataSource } = this.state;
         this.map = new OlMap({
             layers: [
                 new OlLayerTile({
@@ -49,47 +61,25 @@ export default class Map extends Component {
             }),
             target
         });
-        this.map.addOverlay(marker);
-        
-    }
-    componentDidUpdate() {
-        const { dataSource } = this.props;
-        dataSource.forEach((item) => {
-            console.log(document.getElementById(item.id));
+        dataSource.forEach(item => {
             this.map.addOverlay(new OlOverlay({
                 position: OlProj.fromLonLat(item.center),
                 element: document.getElementById(item.id),
                 stopEvent: false
-            }))
+            }));
         })
     }
-    // //www.baidu.com/img/bd_logo1.png
-    // [103.74943256378174, 1.3225763556778443]
-    // [103.8542, 1.3293]
-    // [103.85530471801756, 1.3291406454039345]
-    // [103.84435325860977, 1.38758564176523]
     render() {
         const {
             zoom,
             center,
             target,
             layerUrl,
-            dataSource
         } = this.props;
+        const { dataSource } = this.state;
         return (
             <div>
                 <div id={target}>
-                    <div
-                        id="marker"
-                        title="Marker"
-                        style={{ width: "30px", height: "30px", border: "1px solid red" }}
-                    >
-                        <img
-                            src="//www.baidu.com/img/bd_logo1.png"
-                            alt=""
-                            style={{ width: "100%", height: "100%" }}
-                        />
-                    </div>
                     {
                         dataSource.map(item => (
                             <div
