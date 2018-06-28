@@ -31,7 +31,6 @@ export default class Map extends Component {
         } = this.props;
         const marker = new OlOverlay({
             position: OlProj.fromLonLat([103.63532602787018, 1.3503457557834744]),
-            positioning: 'center-center',
             element: document.getElementById('marker'),
             stopEvent: false
         });
@@ -59,7 +58,6 @@ export default class Map extends Component {
             console.log(document.getElementById(item.id));
             this.map.addOverlay(new OlOverlay({
                 position: OlProj.fromLonLat(item.center),
-                positioning: 'center-center',
                 element: document.getElementById(item.id),
                 stopEvent: false
             }))
