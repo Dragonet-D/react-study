@@ -26,11 +26,9 @@ class App extends Component {
     })
   };
   render() {
-    const { data } = this.state;
     return (
       <div>
-        <button onClick={this.test}>click</button>
-        <Map dataSource={data}/>
+        <Map/>
       </div>
     );
   }

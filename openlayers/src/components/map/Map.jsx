@@ -71,10 +71,7 @@ export default class Map extends Component {
     }
     render() {
         const {
-            zoom,
-            center,
             target,
-            layerUrl,
         } = this.props;
         const { dataSource } = this.state;
         return (
