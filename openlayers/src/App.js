@@ -23,7 +23,7 @@ class App extends Component {
         id: "id4",
         center: [103.84435325860977, 1.38758564176523]
       }]
-    })
+    });
   };
   render() {
     return (
