@@ -5,6 +5,7 @@ import OlSourceOsm from "ol/source/osm";
 import OlView from "ol/view";
 import OlProj from "ol/proj";
 import OlOverlay from "ol/overlay";
+import "./index.css";
 
 export default class Map extends Component {
     constructor(props) {
@@ -75,7 +76,7 @@ export default class Map extends Component {
         } = this.props;
         const { dataSource } = this.state;
         return (
-            <div>
+            <div className="map_wrapper">
                 <div id={target}>
                     {
                         dataSource.map(item => (

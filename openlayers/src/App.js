@@ -12,7 +12,7 @@ class App extends Component {
   };
   test = () => {
     this.setState({
-      data: [,
+      data: [
       {
         id: "id2",
         center: [103.8542, 1.3293]
