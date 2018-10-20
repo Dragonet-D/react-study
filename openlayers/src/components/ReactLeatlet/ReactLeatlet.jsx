@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
+import { Map, TileLayer, Marker, Popup } from './../r-leaflet'
 // import "leaflet/dist/leaflet.css";
 
 export default class SimpleExample extends Component {
@@ -17,7 +17,10 @@ export default class SimpleExample extends Component {
           attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={position}>
+        <Marker
+          position={position}
+          draggable={false}
+        >
           <Popup>
             <div style={{color: "red"}}>A pretty CSS3 popup. <br /> Easily customizable</div>
           </Popup>
