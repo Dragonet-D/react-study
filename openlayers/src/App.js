@@ -2,7 +2,8 @@ import React, {
   Component
 } from 'react';
 // import Map from "./components/map/Map";
-// import Leaflet from "./components/leaflet/Leaflet";
+import Leaflet from "./components/leaflet/Leaflet";
+
 import SimpleExample from "./components/ReactLeatlet/ReactLeatlet"
 class App extends Component {
   state = {
@@ -30,7 +31,7 @@ class App extends Component {
     return (
       <div>
         <span className="material-icons" style={{color: "red"}}>place</span>
-        <SimpleExample/>
+        <Leaflet/>
       </div>
     );
   }
