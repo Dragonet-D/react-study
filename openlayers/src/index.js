@@ -5,6 +5,8 @@ import App from './App';
 import "./lib/leaflet.awesome-markers.css";
 import "leaflet/dist/leaflet.css";
 import "./lib/leaflet.awesome-markers";
+import "leaflet.label/dist/leaflet.label";
+import "leaflet.label/dist/leaflet.label.css";
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));

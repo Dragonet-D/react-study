@@ -25,7 +25,9 @@ export default class Leaflet extends Component{
         var awesomeIcon = awesomeIcons[Math.floor(Math.random()*awesomeIcons.length)];
         var geo = [rndCoordinates(51.3,51.8, 3), rndCoordinates(0.3,-0.4,3)];
 
-        L.marker(geo, {icon: L.AwesomeMarkers.icon({icon: awesomeIcon, prefix: 'fa', markerColor: color}) }).addTo(this.map);
+        L.marker([51.505, -0.09]).bindLabel('Look revealing label!')
+          .openPopup()
+          .addTo(this.map);
       }
     }
     render() {
