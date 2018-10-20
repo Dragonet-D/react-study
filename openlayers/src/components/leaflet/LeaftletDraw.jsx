@@ -23,7 +23,7 @@ export default class LeafletDraw extends Component{
         iconUrl: 'link/to/image.png'
       }
     });
-
+  var drawnItems = L.featureGroup().addTo(this.map)
     var options = {
       position: 'topright',
       draw: {
@@ -43,7 +43,7 @@ export default class LeafletDraw extends Component{
             color: '#bada55'
           }
         },
-        circle: false, // Turns off this drawing tool
+        circle: true, // Turns off this drawing tool
         rectangle: {
           shapeOptions: {
             clickable: false
@@ -56,16 +56,30 @@ export default class LeafletDraw extends Component{
       edit: {
         featureGroup: editableLayers, //REQUIRED!!
         remove: false
-      }
+      },
+      delete: true
     };
 
-    var drawControl = new L.Control.Draw(options);
+    var drawControl = new L.Control.Draw({
+      edit: {
+        featureGroup: drawnItems,
+        poly: {
+          allowIntersection: false
+        }
+      },
+      draw: {
+        polygon: {
+          allowIntersection: false,
+          showArea: true
+        }
+      }
+    });
     this.map.addControl(drawControl);
 
     this.map.on(L.Draw.Event.CREATED, function (e) {
       var type = e.layerType,
         layer = e.layer;
-
+        // console.log(e);
       if (type === 'marker') {
         layer.bindPopup('A popup!');
       }
