@@ -1,8 +1,9 @@
 import React, {
   Component
 } from 'react';
-import Map from "./components/map/Map";
-
+// import Map from "./components/map/Map";
+// import Leaflet from "./components/leaflet/Leaflet";
+import SimpleExample from "./components/ReactLeatlet/ReactLeatlet"
 class App extends Component {
   state = {
     data: [{
@@ -28,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Map/>
+        <SimpleExample/>
       </div>
     );
   }
