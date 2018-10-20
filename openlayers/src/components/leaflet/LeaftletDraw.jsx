@@ -23,7 +23,7 @@ export default class LeafletDraw extends Component{
         iconUrl: 'link/to/image.png'
       }
     });
-  var drawnItems = L.featureGroup().addTo(this.map)
+    var drawnItems = L.featureGroup().addTo(this.map);
     var options = {
       position: 'topright',
       draw: {
@@ -60,20 +60,7 @@ export default class LeafletDraw extends Component{
       delete: true
     };
 
-    var drawControl = new L.Control.Draw({
-      edit: {
-        featureGroup: drawnItems,
-        poly: {
-          allowIntersection: false
-        }
-      },
-      draw: {
-        polygon: {
-          allowIntersection: false,
-          showArea: true
-        }
-      }
-    });
+    var drawControl = new L.Control.Draw(options);
     this.map.addControl(drawControl);
 
     this.map.on(L.Draw.Event.CREATED, function (e) {
