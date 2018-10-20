@@ -29,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <span className="material-icons" style={{color: "red"}}>place</span>
         <SimpleExample/>
       </div>
     );
