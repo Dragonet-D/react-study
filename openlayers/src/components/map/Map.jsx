@@ -51,9 +51,7 @@ export default class Map extends Component {
             layers: [
                 new OlLayerTile({
                     name: target,
-                    source: new OlSourceOsm({
-                        url: layerUrl
-                    })
+                    source: new OlSourceOsm()
                 })
             ],
             view: new OlView({
