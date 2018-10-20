@@ -25,9 +25,9 @@ export default class Leaflet extends Component{
         var awesomeIcon = awesomeIcons[Math.floor(Math.random()*awesomeIcons.length)];
         var geo = [rndCoordinates(51.3,51.8, 3), rndCoordinates(0.3,-0.4,3)];
 
-        L.marker([51.505, -0.09]).bindLabel('Look revealing label!')
-          .openPopup()
-          .addTo(this.map);
+        L.marker(geo, {icon: L.MaterialIconWithLabel.icon({icon: awesomeIcon, prefix: 'fa', markerColor: color}) })
+          .addTo(this.map).bindPopup("<b>中国</b><br>安徽黄山.")
+          .openPopup();
       }
     }
     render() {

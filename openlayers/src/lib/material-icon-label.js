@@ -1,5 +1,5 @@
 /*
-  Leaflet.AwesomeMarkers, a plugin that adds colorful iconic markers for Leaflet, based on the Font Awesome icons
+  Leaflet.MaterialIconWithLabel, a plugin that adds colorful iconic markers for Leaflet, based on the Font Awesome icons
   (c) 2012-2013, Lennard Voogdt
 
   http://leafletjs.com
@@ -11,14 +11,14 @@
 (function (window, document, undefined) {
     "use strict";
     /*
-     * Leaflet.AwesomeMarkers assumes that you have already included the Leaflet library.
+     * Leaflet.MaterialIconWithLabel assumes that you have already included the Leaflet library.
      */
 
-    L.AwesomeMarkers = {};
+    L.MaterialIconWithLabel = {};
 
-    L.AwesomeMarkers.version = '2.0.1';
+    L.MaterialIconWithLabel.version = '2.0.1';
 
-    L.AwesomeMarkers.Icon = L.Icon.extend({
+    L.MaterialIconWithLabel.Icon = L.Icon.extend({
         options: {
             iconSize: [35, 45],
             iconAnchor:   [17, 42],
@@ -116,8 +116,8 @@
       }
     });
         
-    L.AwesomeMarkers.icon = function (options) {
-        return new L.AwesomeMarkers.Icon(options);
+    L.MaterialIconWithLabel.icon = function (options) {
+        return new L.MaterialIconWithLabel.Icon(options);
     };
 
 }(this, document));
