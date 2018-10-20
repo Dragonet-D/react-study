@@ -77,7 +77,7 @@
             }
 
             // return "<i " + iconColorStyle + "class='" + options.extraClasses + " " + options.prefix + " " + iconClass + " " + iconSpinClass + " " + iconColorClass + "'></i>"; ${iconClass}
-            return `<i ${iconColorStyle} class= "${options.extraClasses } ${options.prefix} ${iconSpinClass} ${iconColorClass}"><span class="material-icons" style="color: ${options.markerColor}">${options.icon}</span></i>`;
+            return `<span class="material-icons" style="color: ${options.markerColor}">${options.icon}</span>`;
         },
 
         _setIconStyles: function (img, name) {
