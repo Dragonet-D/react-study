@@ -4,32 +4,24 @@ import "leaflet-draw";
 
 export default class LeafletDraw extends Component{
   constructor(props) {
-    super(props)
+    super(props);
     this.map = {}
   }
   componentDidMount() {
     this.map = L.map('mapp').setView([51.505, -0.09], 12);
-    var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
-    var drawnItems = L.featureGroup().addTo(this.map);
+    const osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+    const osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
+
+    const drawnItems = L.featureGroup().addTo(this.map);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
     L.marker([51.5, -0.09]).addTo(this.map);
-    var editableLayers = new L.FeatureGroup();
+    const editableLayers = new L.FeatureGroup();
     this.map.addLayer(editableLayers);
 
-    var MyCustomMarker = L.Icon.extend({
-      options: {
-        shadowUrl: null,
-        iconAnchor: new L.Point(12, 12),
-        iconSize: new L.Point(24, 24),
-        iconUrl: 'link/to/image.png'
-      }
-    });
-
-    var options = {
+    const options = {
       position: 'topright',
       edit: {
         featureGroup: drawnItems,
@@ -46,16 +38,16 @@ export default class LeafletDraw extends Component{
         marker: false,
         circlemarker: false
       }
-    }
-    var drawControl = new L.Control.Draw(options);
+    };
+    const drawControl = new L.Control.Draw(options);
     this.map.addControl(drawControl);
 
 
     // Object created - bind popup to layer, add to feature group
     this.map.on(L.Draw.Event.CREATED, function(event) {
-      var layer = event.layer;
+      const layer = event.layer;
       console.log(event);
-      var content = getPopupContent(layer);
+      const content = getPopupContent(layer);
       if (content !== null) {
         // layer.bindPopup(content);
       }
@@ -64,9 +56,8 @@ export default class LeafletDraw extends Component{
 
     // Object(s) edited - update popups
     this.map.on(L.Draw.Event.EDITED, function(event) {
-      var layers = event.layers,
+      let layers = event.layers,
         content = null;
-      console.log(event);
       layers.eachLayer(function(layer) {
         content = getPopupContent(layer);
         if (content !== null) {
@@ -74,14 +65,14 @@ export default class LeafletDraw extends Component{
         }
       });
     });
-    var _round = function(num, len) {
+    const _round = function(num, len) {
       return Math.round(num*(Math.pow(10, len)))/(Math.pow(10, len));
     };
     // Helper method to format LatLng object (x.xxxxxx, y.yyyyyy)
-    var strLatLng = function(latlng) {
+    const strLatLng = function(latlng) {
       return "("+_round(latlng.lat, 6)+", "+_round(latlng.lng, 6)+")";
     };
-    var getPopupContent = function(layer) {
+    const getPopupContent = function(layer) {
       // Marker - add lat/long
       if (layer instanceof L.Marker || layer instanceof L.CircleMarker) {
         return strLatLng(layer.getLatLng());
@@ -93,12 +84,12 @@ export default class LeafletDraw extends Component{
           +"Radius: "+_round(radius, 2)+" m";
         // Rectangle/Polygon - area
       } else if (layer instanceof L.Polygon) {
-        var latlngs = layer._defaultShape ? layer._defaultShape() : layer.getLatLngs(),
+        const latlngs = layer._defaultShape ? layer._defaultShape() : layer.getLatLngs(),
           area = L.GeometryUtil.geodesicArea(latlngs);
         return "Area: "+L.GeometryUtil.readableArea(area, true);
         // Polyline - distance
       } else if (layer instanceof L.Polyline) {
-        var latlngs = layer._defaultShape ? layer._defaultShape() : layer.getLatLngs(),
+        let latlngs = layer._defaultShape ? layer._defaultShape() : layer.getLatLngs(),
           distance = 0;
         if (latlngs.length < 2) {
           return "Distance: N/A";
