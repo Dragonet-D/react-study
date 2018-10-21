@@ -40,7 +40,10 @@ export default class LeafletDraw extends Component{
         polygon : {
           allowIntersection: false,
           showArea: false
-        }
+        },
+        polyline: false,
+        marker: false,
+        circlemarker: false
       }
     }
     var drawControl = new L.Control.Draw(options);
