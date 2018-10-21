@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import L from "leaflet";
-import "leaflet-draw"
+import "leaflet-draw";
 
 export default class LeafletDraw extends Component{
   constructor(props) {
@@ -15,7 +15,8 @@ export default class LeafletDraw extends Component{
     var drawnItems = L.featureGroup().addTo(this.map);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(this.map)
+    }).addTo(this.map);
+    L.marker([51.5, -0.09]).addTo(this.map);
     var editableLayers = new L.FeatureGroup();
     this.map.addLayer(editableLayers);
 

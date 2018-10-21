@@ -8,6 +8,7 @@
     "leaflet.awesome-markers": "^2.0.4",
     "leaflet.label": "^0.2.4",
     "ol": "^4.6.5",
+    "proj4leaflet": "^1.0.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-leaflet": "^2.1.0",

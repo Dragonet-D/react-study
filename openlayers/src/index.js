@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import "leaflet/dist/leaflet.css";
 // import "leaflet.label/libs/leaflet/leaflet-src";
 // import "leaflet.label/src/Label";
 // import "leaflet.label/src/BaseMarkerMethods";
