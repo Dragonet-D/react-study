@@ -17,8 +17,9 @@ export default class Map extends Component {
             width: "100%",
             height: "100%"
         },
-        center: [103.784342, 1.352586],
-        zoom: 12,
+        // center: [51.505, -0.09],
+      center: [51.505, -0.09],
+        zoom:12,
         layerUrl: "https://maps-{a-c}.onemap.sg/v3/Grey/{z}/{x}/{y}.png",
         target: `map_${Math.random}`,
     }
@@ -55,11 +56,12 @@ export default class Map extends Component {
                 })
             ],
             view: new OlView({
-                center: OlProj.fromLonLat(center),
+                center: OlProj.transform(center, 'EPSG:4326' ,'EPSG:3857'),
                 zoom,
             }),
             target
         });
+        console.log(OlProj.transform(center, 'EPSG:4326' ,'EPSG:3857'));
         dataSource.forEach(item => {
             this.map.addOverlay(new OlOverlay({
                 position: OlProj.fromLonLat(item.center),

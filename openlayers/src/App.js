@@ -1,10 +1,11 @@
 import React, {
   Component
 } from 'react';
-// import Map from "./components/map/Map";
+import Map from "./components/map/Map";
 import Leaflet from "./components/leaflet/Leaflet";
 import LeafletLabel from "./components/leaflet/LeafletLabel";
 import LeafletDraw from "./components/leaflet/LeaftletDraw";
+import LeafletCoordinate from "./components/leaflet/LeafletCoordinate";
 
 import SimpleExample from "./components/ReactLeatlet/ReactLeatlet"
 class App extends Component {
@@ -33,7 +34,7 @@ class App extends Component {
     return (
       <div>
         <span className="material-icons" style={{color: "red"}}>place</span>
-        <LeafletDraw/>
+        <Map/>
       </div>
     );
   }
