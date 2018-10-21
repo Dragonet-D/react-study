@@ -7,8 +7,8 @@ export default class LeafletCoordinate extends Component{
   componentDidMount() {
     // [103.84435325860977, 1.38758564176523] [51.505, -0.09]
     const center = [103.84435325860977, 1.38758564176523];
-
-    this.map = L.map('map').setView(OlProj.transform(center, 'EPSG:4326' ,'EPSG:3857'), 10);
+    // const centeraa = OlProj.transform(center, 'WGS84' ,'EPSG:4326');
+    this.map = L.map('map').setView([39.897445, 116.331398], 10);
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.map);
   };
   render() {

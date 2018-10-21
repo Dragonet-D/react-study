@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div>
         <span className="material-icons" style={{color: "red"}}>place</span>
-        <Map/>
+        <LeafletCoordinate/>
       </div>
     );
   }
