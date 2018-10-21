@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/demos/Leaflet.awesome-markers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/demos/Leaflet.label" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/demos/Proj4Leaflet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/demos/leaflet-locatecontrol" vcs="Git" />
   </component>
 </project>
