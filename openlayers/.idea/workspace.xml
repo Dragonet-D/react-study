@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75a5647f-d20a-4320-8614-d621ba3c25a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demos/Leaflet.awesome-markers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/Leaflet.label" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/Proj4Leaflet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/Proj4Leaflet/examples/geojson-crs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/demos/Proj4Leaflet/examples/geojson-crs/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/src/L.Control.Locate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/src/L.Control.Locate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leaflet/LeafletCoordinate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leaflet/LeafletCoordinate.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +19,9 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,14 +49,14 @@
           <entry key="css" value="31" />
           <entry key="html" value="88" />
           <entry key="js" value="398" />
-          <entry key="jsx" value="1812" />
+          <entry key="jsx" value="1820" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="31" />
           <entry key="HTML" value="88" />
-          <entry key="JSX Harmony" value="1812" />
+          <entry key="JSX Harmony" value="1820" />
           <entry key="JavaScript" value="398" />
         </counts>
       </usages-collector>
@@ -75,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="325">
               <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
@@ -87,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="50">
               <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -99,11 +91,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/leaflet/Leaflet.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="625">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,16 +103,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeafletCoordinate.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="17" column="144" selection-start-line="17" selection-start-column="144" selection-end-line="17" selection-end-column="144" />
+            <state relative-caret-position="325">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#855#1201#0" />
-                <element signature="e#1418#1639#0" />
-                <element signature="e#1736#1980#0" />
-                <element signature="e#2021#2098#0" />
-                <element signature="e#2205#2283#0" />
-                <element signature="e#2329#3536#0" />
               </folding>
             </state>
           </provider>
@@ -130,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeafletLabel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="400">
               <caret line="17" column="69" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="69" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -151,13 +136,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeaftletDraw.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="1075">
               <caret line="45" selection-start-line="45" selection-end-line="103" selection-end-column="6" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#965#1311#0" />
               </folding>
             </state>
           </provider>
@@ -184,7 +166,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/map/Map.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="375">
               <caret line="22" column="71" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="71" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -268,7 +250,7 @@
       <path value="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="727" />
     <option name="y" value="6" />
     <option name="width" value="945" />
@@ -282,7 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,6 +385,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,14 +427,16 @@
       <updated>1540003337923</updated>
       <workItem from="1540003339293" duration="10931000" />
       <workItem from="1540046984741" duration="30218000" />
+      <workItem from="1540214675677" duration="507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41149000" />
+    <option name="totallyTimeSpent" value="41656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -469,7 +453,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32719547" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -563,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
           <caret line="34" column="33" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="33" />
-          <folding>
-            <element signature="e#15#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,10 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="116" column="7" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,45 +595,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-175">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/map/Map.jsx">
+    <entry file="file://$PROJECT_DIR$/node_modules/leaflet.label/dist/leaflet.label.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="71" />
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/leaflet/Leaflet.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/openayers/openlayers.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeafletLabel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/map/a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeaftletDraw.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="45" selection-start-line="45" selection-end-line="103" selection-end-column="6" />
+        <state relative-caret-position="400">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="69" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#965#1311#0" />
           </folding>
         </state>
       </provider>
@@ -668,68 +648,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeafletLabel.js">
+    <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeaftletDraw.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="69" />
+        <state relative-caret-position="1075">
+          <caret line="45" selection-start-line="45" selection-end-line="103" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/leaflet/Leaflet.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/map/a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/leaflet.label/dist/leaflet.label.js">
+    <entry file="file://$PROJECT_DIR$/src/components/openayers/openlayers.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/map/Map.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="375">
+          <caret line="22" column="71" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="71" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/leaflet/LeafletCoordinate.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="17" column="144" selection-start-line="17" selection-start-column="144" selection-end-line="17" selection-end-column="144" />
+        <state relative-caret-position="325">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#855#1201#0" />
-            <element signature="e#1418#1639#0" />
-            <element signature="e#1736#1980#0" />
-            <element signature="e#2021#2098#0" />
-            <element signature="e#2205#2283#0" />
-            <element signature="e#2329#3536#0" />
           </folding>
         </state>
       </provider>

@@ -102,7 +102,7 @@ export default class LeafletCoordinate extends Component{
   };
   render() {
     return (
-      <div id="map" style={{ height: "100vh"}} />
+      <div id="map" style={{ width: "800px", height: "800px"}} />
     );
   }
 }
