@@ -62,6 +62,9 @@ export default class LeafletCoordinate extends Component{
       });
     });
     this.map.on("zoomend", function(event) {
+      // console.log(event.target.getZoom());
+    });
+    this.map.on("viewreset", function(event) {
       console.log(event.target.getZoom());
     });
   };
@@ -71,7 +74,7 @@ export default class LeafletCoordinate extends Component{
       mapHeight: "700px"
     });
     setTimeout(() => {
-      console.log(this.map);
+      console.log(L.viewreset);
     }, 1000)
   };
   render() {
