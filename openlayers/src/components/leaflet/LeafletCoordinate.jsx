@@ -74,8 +74,8 @@ export default class LeafletCoordinate extends Component{
       mapHeight: "700px"
     });
     setTimeout(() => {
-      console.log(L.viewreset);
-    }, 1000)
+      this.map.invalidateSize(true);
+    }, 0)
   };
   render() {
     const { mapWith, mapHeight } = this.state;
