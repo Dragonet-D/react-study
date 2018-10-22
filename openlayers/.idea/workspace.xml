@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demos/Proj4Leaflet/examples/geojson-crs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/demos/Proj4Leaflet/examples/geojson-crs/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/src/L.Control.Locate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/src/L.Control.Locate.js" afterDir="false" />
@@ -25,7 +26,7 @@
     <session id="1041630640">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.opened" value="2" />
@@ -267,11 +268,11 @@
       <path value="$PROJECT_DIR$/src/demos/leaflet-locatecontrol/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="728" />
-    <option name="y" value="7" />
-    <option name="width" value="944" />
-    <option name="height" value="1049" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="727" />
+    <option name="y" value="6" />
+    <option name="width" value="945" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -443,12 +444,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540003337923</updated>
       <workItem from="1540003339293" duration="10931000" />
-      <workItem from="1540046984741" duration="30024000" />
+      <workItem from="1540046984741" duration="30218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40955000" />
+    <option name="totallyTimeSpent" value="41149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
