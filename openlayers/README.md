@@ -5,3 +5,4 @@
         Marker: Marker movement
 #> plugin
     Arc.js 画一条线 给起点坐标和终点坐标
+    Heatmap from markers: 地图热点图
