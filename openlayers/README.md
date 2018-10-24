@@ -7,3 +7,4 @@
     Arc.js 画一条线 给起点坐标和终点坐标
     Heatmap from markers: 地图热点图
     Leaflet miniMap: 小地图
+    Show drawn polygon area: 显示画的区域的面积
