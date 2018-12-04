@@ -8,7 +8,7 @@ import Router2 from "./components/Router1/Router2"
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((
-  <BrowserRouter basename="nihao">
+  <BrowserRouter basename="/hello">
     <Switch>
       <Route path='/' component={App} exact/>
       <Route path='/router1' component={Router1} exact/>
