@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ImmutableCom from "./Components/Immutable/Immutable"
+import ImmutableCom from "./Components/Immutable/Immutable";
 import './App.css';
 
 class App extends Component {

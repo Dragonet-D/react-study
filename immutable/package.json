@@ -6,6 +6,7 @@
     "immutable": "^4.0.0-rc.12",
     "immutable-cursor": "^2.0.1",
     "prop-types": "^15.6.2",
+    "pure-render-decorator": "^1.2.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.1"
