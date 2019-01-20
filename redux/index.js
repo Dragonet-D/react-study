@@ -18,7 +18,7 @@ export default class App extends Component {
   }
   render() {
     return (
-      <div>123</div>
+      <div onClick={this.getData}>123</div>
     )
   }
 }
