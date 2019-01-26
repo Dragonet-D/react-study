@@ -12,7 +12,9 @@ function counter(state = {value: 0}, action) {
   }
 }
 
+
 let store = createStore(counter);
+// let store = createStore(counter, {}); 第二个参数可以作为initialState
 
 document.body.onclick = () => {
   store.dispatch({type: 'INCREMENT', value: 6})
