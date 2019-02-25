@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ImmutableCom from "./Components/Immutable/Immutable";
+import Hooks from "./Components/Hooks/Hooks";
 import './App.css';
 
 class App extends Component {
@@ -13,11 +13,15 @@ class App extends Component {
   };
 
   render() {
-    const {content} = this.state;
     return (
       <div className="App">
         <button onClick={this.test}>test</button>
-        <ImmutableCom content={content}/>
+        <Hooks/>
+        <Hooks/>
+        <Hooks/>
+        <Hooks/>
+        <Hooks/>
+        <Hooks/>
       </div>
     );
   }
