@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9e2ea8c-9982-441f-a22c-45d76b9bfd73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/doc/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/note.md" afterDir="false" />
-    </list>
+    <list default="true" id="b9e2ea8c-9982-441f-a22c-45d76b9bfd73" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -138,16 +136,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551881061490</updated>
-      <workItem from="1551881063036" duration="3100000" />
+      <workItem from="1551881063036" duration="3716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3100000" />
+    <option name="totallyTimeSpent" value="3716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="850" y="60" width="780" height="831" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="DB Browser" />
@@ -158,7 +155,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3319027" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.47353363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
