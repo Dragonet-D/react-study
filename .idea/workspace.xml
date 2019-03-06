@@ -20,18 +20,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
               <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/immutable/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-347" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -67,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redux-todo/todo/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="75">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -79,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redux-todo/todo/src/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
+            <state>
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -90,7 +85,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/redux-todo/todo/src/reducers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="225">
               <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -127,10 +122,11 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1000" />
-    <option name="width" value="925" />
-    <option name="height" value="1085" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="703" />
+    <option name="y" value="67" />
+    <option name="width" value="975" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -145,60 +141,6 @@
               <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-study" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="immutable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="reac-typescript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="reac-typescript" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="reac-typescript" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="reac-typescript" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="redux-todo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="redux-todo" type="462c0819:PsiDirectoryNode" />
-              <item name="todo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="redux-todo" type="462c0819:PsiDirectoryNode" />
-              <item name="todo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-study" type="462c0819:PsiDirectoryNode" />
-              <item name="run-eject" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,7 +151,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/react-source-code" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -255,21 +197,21 @@
       <workItem from="1548080416288" duration="145000" />
       <workItem from="1548080579496" duration="9000" />
       <workItem from="1551104628188" duration="747000" />
+      <workItem from="1551880226490" duration="824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3863000" />
+    <option name="totallyTimeSpent" value="4687000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="563" y="54" width="780" height="831" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23659517" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.48891968" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="DB Browser" order="4" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -279,9 +221,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49731904" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4953083" visible="true" weight="0.31303117" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4953083" visible="true" weight="0.31473532" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50469166" side_tool="true" weight="0.31303117" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -394,16 +337,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/immutable/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/reac-typescript/src/Components/Test/index.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -431,7 +369,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redux-todo/todo/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -441,7 +379,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redux-todo/todo/src/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
+        <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -450,7 +388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redux-todo/todo/src/reducers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="225">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
