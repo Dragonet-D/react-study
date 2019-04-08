@@ -1,6 +1,6 @@
 # Hooks
 
-# Capture Value
+## Capture Value
 ```javascript
 const App = () => {
   const [temp, setTemp] = React.useState(5);
@@ -24,7 +24,7 @@ const App = () => {
   );
 };
 ```
-# 如何绕过 Capture Value
+## 如何绕过 Capture Value
 利用 useRef 就可以绕过 Capture Value 的特性。可以认为 ref 在所有 Render 过程中保持着唯一引用，因此所有对 ref 的赋值或取值，拿到的都只有一个最终状态，而不会在每个 Render 间存在隔离。
 
 ```javascript
@@ -40,6 +40,47 @@ function Example() {
       console.log(`You clicked ${latestCount.current} times`);
     }, 3000);
   });
+  // ...
+}
+```
+## 回收机制
+```javascript
+function Example(props) {
+  let timer = setTimeout(() => {
+      console.log(123);
+  }, 1000);
+  useEffect(() => {
+      return () => {
+          clearTimeout(timer) // componentWillUnmount
+      }
+  })
+}
+```
+
+## 更内聚
+```javascript
+function Article({ id }) {
+  const [article, setArticle] = useState(null);
+
+  // 副作用，只关心依赖了取数函数
+  useEffect(() => {
+    // didCancel 赋值与变化的位置更内聚
+    let didCancel = false;
+
+    async function fetchData() {
+      const article = await API.fetchArticle(id);
+      if (!didCancel) {
+        setArticle(article);
+      }
+    }
+
+    fetchData();
+
+    return () => {
+      didCancel = true;
+    };
+  }, [fetchArticle]);
+
   // ...
 }
 ```
