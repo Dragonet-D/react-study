@@ -7,12 +7,14 @@ function ToDo() {
     const [todoList, setTodoList] = useState([{
         checked: true,
         value: 'hello'
-    }])
+    }]);
+    const [count, setCount] = useState(0);
     useEffect(() => {
-        return () => {
-            console.log(123);
-        }
-    })
+        document.title = count
+    }, [])
+    useEffect(() => {
+        document.title = count
+    }, [count])
 
     function handlePressEnter() {
         if (!todo) return;
@@ -30,8 +32,16 @@ function ToDo() {
         setTodoList([...todoList])
     }
 
+    function countClick() {
+        setCount(count => {
+            // console.log(count); prev count
+            return count + 1
+        })
+    }
+
     return (
         <Fragment>
+            <button onClick={countClick}>test useEffect</button>
             <div className="todo_wrapper">
                 <Input
                     placeholder='input todo'

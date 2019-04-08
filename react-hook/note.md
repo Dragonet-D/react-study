@@ -1,5 +1,8 @@
 # Hooks
 
+## useEffects
+React只会在浏览器绘制后运行effects。这使得你的应用更流畅因为大多数effects并不会阻塞屏幕的更新
+
 ## Capture Value
 ```javascript
 const App = () => {
