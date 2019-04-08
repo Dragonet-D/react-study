@@ -8,12 +8,12 @@ function Hooks() {
     });
 
     return (
-        <div>
+        <React.Fragment>
             <p>You clicked {count} times</p>
             <button onClick={() => setCount(count + 1)}>
                 Click me
             </button>
-        </div>
+        </React.Fragment>
     );
 }
 
