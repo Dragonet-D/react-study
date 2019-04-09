@@ -106,6 +106,7 @@ function Example() {
   // ...
 ```
 ## 解耦来自Actions的更新
+React会保证dispatch在组件的声明周期内保持不变。所以下面例子中不再需要重新订阅定时器。
 
 ```javascrit
 const [state, dispatch] = useReducer(reducer, initialState);
