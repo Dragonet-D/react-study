@@ -105,3 +105,17 @@ function Example() {
 }
   // ...
 ```
+## 解耦来自Actions的更新
+
+```javascrit
+const [state, dispatch] = useReducer(reducer, initialState);
+const { count, step } = state;
+
+useEffect(() => {
+  const id = setInterval(() => {
+    dispatch({ type: 'tick' }); // Instead of setCount(c => c + step);
+  }, 1000);
+  return () => clearInterval(id);
+}, [dispatch]);
+
+
