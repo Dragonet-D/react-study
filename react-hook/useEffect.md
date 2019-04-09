@@ -251,3 +251,39 @@ function Child({ fetchData }) {
   // ...
 }
 ```
+
+## useMemo
+```javascript
+function ColorPicker() {
+  // Doesn't break Child's shallow equality prop check
+  // unless the color actually changes.
+  const [color, setColor] = useState('pink');
+  const style = useMemo(() => ({ color }), [color]); // {color: "pink"}
+  return <Child style={style} />;
+}
+```
+## useEffect 处理无限更新的情况
+```javascript
+function Article({ id }) {
+  const [article, setArticle] = useState(null);
+
+  useEffect(() => {
+    let didCancel = false;
+
+    async function fetchData() {
+      const article = await API.fetchArticle(id);
+      if (!didCancel) {
+        setArticle(article);
+      }
+    }
+
+    fetchData();
+
+    return () => {
+      didCancel = true;
+    };
+  }, [id]);
+
+  // ...
+}
+```
