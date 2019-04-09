@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5159788-8f59-460c-9720-16e94c9eafe3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/react-hook/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/react-hook/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-hook/useEffect.md" beforeDir="false" afterPath="$PROJECT_DIR$/react-hook/useEffect.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +28,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/react-hook/note.md">
+        <entry file="file://$PROJECT_DIR$/react-hook/useEffect.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="260">
-                <caret line="161" column="3" selection-start-line="161" selection-start-column="3" selection-end-line="161" selection-end-column="3" />
+              <first_editor relative-caret-position="503">
+                <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -148,6 +148,7 @@
         <option value="$PROJECT_DIR$/react-hook/scripts/start.js" />
         <option value="$PROJECT_DIR$/react-hook/src/components/hooks/ToDo.js" />
         <option value="$PROJECT_DIR$/react-hook/note.md" />
+        <option value="$PROJECT_DIR$/react-hook/useEffect.md" />
       </list>
     </option>
   </component>
@@ -238,12 +239,12 @@
       <workItem from="1553391420621" duration="1991000" />
       <workItem from="1554737821027" duration="719000" />
       <workItem from="1554813447564" duration="355000" />
-      <workItem from="1554813912217" duration="3346000" />
+      <workItem from="1554813912217" duration="3642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15984000" />
+    <option name="totallyTimeSpent" value="16280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -263,7 +264,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49731904" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4953083" visible="true" weight="0.30878186" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4953083" weight="0.30878186" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50469166" side_tool="true" weight="0.31303117" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
@@ -480,7 +481,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-hook/note.md">
+    <entry file="file://$PROJECT_DIR$/react-hook/useEffect.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
@@ -488,8 +489,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="260">
-            <caret line="161" column="3" selection-start-line="161" selection-start-column="3" selection-end-line="161" selection-end-column="3" />
+          <first_editor relative-caret-position="503">
+            <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

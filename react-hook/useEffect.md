@@ -159,7 +159,7 @@ function SearchResults() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<SearchResults />, rootElement);
 ```
-不能放到useEffect中的
+不能放到useEffect中的 getFetchUrl更新太频繁
 ```javascript
 function SearchResults() {
   // 🔴 Re-triggers all effects on every render
@@ -180,4 +180,74 @@ function SearchResults() {
   // ...
 }
 ```
-getFetchUrl更新太频繁
+
+- 如果一个函数没有使用组件内的任何值，你应该把它提到组件外面去定义，然后就可以自由地在effects中使用
+
+```javascript
+// ✅ Not affected by the data flow
+function getFetchUrl(query) {
+  return 'https://hn.algolia.com/api/v1/search?query=' + query;
+}
+
+function SearchResults() {
+  useEffect(() => {
+    const url = getFetchUrl('react');
+    // ... Fetch data and do something ...
+  }, []); // ✅ Deps are OK
+
+  useEffect(() => {
+    const url = getFetchUrl('redux');
+    // ... Fetch data and do something ...
+  }, []); // ✅ Deps are OK
+
+  // ...
+}
+```
+
+- 你也可以把它包装成 useCallback Hook
+
+```javascript
+function SearchResults() {
+  // ✅ Preserves identity when its own deps are the same
+  const getFetchUrl = useCallback((query) => {
+    return 'https://hn.algolia.com/api/v1/search?query=' + query;
+  }, []);  // ✅ Callback deps are OK
+
+  useEffect(() => {
+    const url = getFetchUrl('react');
+    // ... Fetch data and do something ...
+  }, [getFetchUrl]); // ✅ Effect deps are OK
+
+  useEffect(() => {
+    const url = getFetchUrl('redux');
+    // ... Fetch data and do something ...
+  }, [getFetchUrl]); // ✅ Effect deps are OK
+
+  // ...
+}
+```
+- 对于通过属性从父组件传入的函数这个方法也适用
+
+```javascript
+function Parent() {
+  const [query, setQuery] = useState('react');
+
+  // ✅ Preserves identity until query changes
+  const fetchData = useCallback(() => {
+    const url = 'https://hn.algolia.com/api/v1/search?query=' + query;
+    // ... Fetch data and return it ...
+  }, [query]);  // ✅ Callback deps are OK
+
+  return <Child fetchData={fetchData} />
+}
+
+function Child({ fetchData }) {
+  let [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetchData().then(setData);
+  }, [fetchData]); // ✅ Effect deps are OK
+
+  // ...
+}
+```
