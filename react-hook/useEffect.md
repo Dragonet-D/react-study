@@ -159,4 +159,25 @@ function SearchResults() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<SearchResults />, rootElement);
 ```
+不能放到useEffect中的
+```javascript
+function SearchResults() {
+  // 🔴 Re-triggers all effects on every render
+  function getFetchUrl(query) {
+    return 'https://hn.algolia.com/api/v1/search?query=' + query;
+  }
 
+  useEffect(() => {
+    const url = getFetchUrl('react');
+    // ... Fetch data and do something ...
+  }, [getFetchUrl]); // 🚧 Deps are correct but they change too often
+
+  useEffect(() => {
+    const url = getFetchUrl('redux');
+    // ... Fetch data and do something ...
+  }, [getFetchUrl]); // 🚧 Deps are correct but they change too often
+
+  // ...
+}
+```
+getFetchUrl更新太频繁
