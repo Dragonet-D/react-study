@@ -10,3 +10,7 @@ export default class ReactComponent {
   }
 }
 ```
+
+dark #171717
+light #464646
+main #1f1f1f
