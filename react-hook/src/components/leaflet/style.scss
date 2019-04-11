@@ -1,0 +1,30 @@
+.leaflet_wrapper {
+  height: 100%;
+  position: relative;
+
+  .map {
+    height: 100%;
+  }
+
+  .layer_btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 999;
+    color: #ffffff;
+    padding: 8px;
+  }
+
+  .collapse {
+    position: absolute;
+    z-index: 999;
+    right: 4px;
+    top: 46px;
+
+    .layer_content {
+      width: 300px;
+      height: 300px;
+      overflow-y: auto
+    }
+  }
+}

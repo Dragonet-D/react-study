@@ -1,4 +1,7 @@
 @import '~antd/dist/antd.css';
+#root {
+  height: 100%;
+}
 .App {
   background-color: #282c34;
 }

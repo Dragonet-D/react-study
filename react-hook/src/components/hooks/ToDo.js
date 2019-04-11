@@ -41,7 +41,6 @@ function ToDo() {
 
     return (
         <Fragment>
-            <button onClick={countClick}>test useEffect</button>
             <div className="todo_wrapper">
                 <Input
                     placeholder='input todo'
@@ -54,6 +53,7 @@ function ToDo() {
                 todoList={todoList}
                 checkChange={handleCheckStatus}
             />
+            <button onClick={countClick}>test useEffect</button>
         </Fragment>
     )
 }
