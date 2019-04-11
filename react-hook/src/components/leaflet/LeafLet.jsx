@@ -69,6 +69,7 @@ function LeafLet(props) {
                                             return (
                                                 <FormControlLabel
                                                     value={item}
+                                                    key={item}
                                                     control={<Radio/>}
                                                     label={item}
                                                 />)
