@@ -12,23 +12,31 @@ import {
   Radio
 } from "@material-ui/core";
 import {Layers} from "@material-ui/icons";
+import {useMap, useMarker} from "./use-leaflet";
+import GreenIcon from "./leaf-green.png";
 
 import "leaflet/dist/leaflet.css";
 
-let map = {};
+const greenIcon = L.icon({
+  iconUrl: GreenIcon,
+  iconSize: [38, 95],
+  iconAnchor: [22, 94],
+  popupAnchor: [-3, -76]
+});
 
 function Map(props) {
   const {id} = props;
+  const center = L.latLng(1.3559982755948157, 103.81118774414062);
   const [collapseStatus, setCollapseStatus] = useState(false);
   const [currentLayer, setCurrentLayer] = useState("female");
-
+  const mapRef = useMap(id, {
+    center,
+    zoom: 11,
+    layers: [L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png")]
+  });
+  const markerRef = useMarker(L.latLng(1.3559982755948157, 103.81118774414062), {icon: greenIcon});
   useEffect(() => {
-    map = L.map("map");
-    map.setView(
-      L.latLng(1.3559982755948157, 103.81118774414062),
-      11
-    );
-    L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map)
+    markerRef.current.addTo(mapRef.current);
   }, []);
 
   function handleClickAway(e) {

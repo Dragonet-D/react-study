@@ -5,7 +5,8 @@ import "./style.scss";
 function Leaflet() {
   return (
     <div className="leaflet_wrapper">
-      <Map/>
+      <Map id="map1"/>
+      <Map id="map2"/>
     </div>
   )
 }

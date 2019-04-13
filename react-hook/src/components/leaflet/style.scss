@@ -2,10 +2,11 @@
   height: 100%;
   position: relative;
   display: flex;
+  justify-content: space-evenly;
 
   .map {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
   }
 
   .layer_btn {
