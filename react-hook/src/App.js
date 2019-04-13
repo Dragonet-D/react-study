@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import ToDo from './components/hooks/ToDo';
 import Test from './components/hooks/Test';
-import LeafLet from './components/leaflet/LeafLet';
+import LeafLet from './components/leaflet';
 import './App.css';
 
 function App() {

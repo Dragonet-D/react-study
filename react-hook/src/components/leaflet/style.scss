@@ -1,9 +1,11 @@
 .leaflet_wrapper {
   height: 100%;
   position: relative;
+  display: flex;
 
   .map {
-    height: 100%;
+    height: 300px;
+    width: 300px;
   }
 
   .layer_btn {
