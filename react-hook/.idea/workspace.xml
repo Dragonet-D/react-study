@@ -37,8 +37,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="1025">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+=======
             <state relative-caret-position="1008">
               <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+>>>>>>> 403fa5cb1394023c2f5aaf9e73420c136b054886
             </state>
           </provider>
         </entry>
@@ -46,6 +51,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/hooks/ToDo.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="775">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+=======
             <state relative-caret-position="798">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
@@ -66,6 +75,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
               <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+>>>>>>> 403fa5cb1394023c2f5aaf9e73420c136b054886
             </state>
           </provider>
         </entry>
@@ -106,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="765" />
     <option name="y" value="50" />
     <option name="width" value="1055" />
@@ -202,7 +212,11 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12064343" />
+=======
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120469086" />
+>>>>>>> 403fa5cb1394023c2f5aaf9e73420c136b054886
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -217,7 +231,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32777777" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3281471" />
+=======
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32777777" />
+>>>>>>> 403fa5cb1394023c2f5aaf9e73420c136b054886
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -249,17 +267,29 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/components/hooks/ToDo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+=======
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+>>>>>>> 403fa5cb1394023c2f5aaf9e73420c136b054886
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/hooks/ToDo.js">
+    <entry file="file://$PROJECT_DIR$/src/components/hooks/style.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="225">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+=======
         <state relative-caret-position="798">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
+>>>>>>> 403fa5cb1394023c2f5aaf9e73420c136b054886
         </state>
       </provider>
     </entry>
@@ -279,8 +309,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/leaflet/style.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1025">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+=======
         <state relative-caret-position="483">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+>>>>>>> 403fa5cb1394023c2f5aaf9e73420c136b054886
         </state>
       </provider>
     </entry>
