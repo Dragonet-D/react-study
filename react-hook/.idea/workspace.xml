@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06d6c348-5bc7-41f4-a3a7-a9d789bd4160" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/leaflet/LeafLet.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leaflet/LeafLet.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="06d6c348-5bc7-41f4-a3a7-a9d789bd4160" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -195,12 +192,12 @@
       <workItem from="1553611384555" duration="10000" />
       <workItem from="1553928123878" duration="103000" />
       <workItem from="1554813889764" duration="20000" />
-      <workItem from="1554944938875" duration="555000" />
+      <workItem from="1554944938875" duration="621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21978000" />
+    <option name="totallyTimeSpent" value="22044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
