@@ -19,3 +19,13 @@
 /**
  * Created by Deng Xiaolong on 18/03/2019.
  */
+
+import React from "react";
+
+function CssTest() {
+    return (
+        <div>123</div>
+    );
+}
+
+export default CssTest;
