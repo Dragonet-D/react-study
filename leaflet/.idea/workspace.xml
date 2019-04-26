@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d5fccf-b221-4650-8b6d-a1d3bca6e16a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/map/kml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/map/leaflet.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/map/mrtStations.kml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/map/policeStations.kml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/map/leaflet.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/map/leaflet.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
@@ -42,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/map/leaflet.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="300">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -57,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/map/mrtStations.kml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="582" column="43" selection-start-line="582" selection-start-column="14" selection-end-line="582" selection-end-column="43" />
+            <state relative-caret-position="316">
+              <caret line="1409" column="38" selection-start-line="1409" selection-start-column="19" selection-end-line="1409" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -115,9 +109,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>leaf</find>
-      <find>Images</find>
       <find>Images/</find>
+      <find>Images</find>
       <find>static</find>
+      <find>stadiu</find>
     </findStrings>
     <replaceStrings>
       <replace>static/Images</replace>
@@ -132,13 +127,13 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/components/map/policeStations.kml" />
         <option value="$PROJECT_DIR$/src/components/map/kml.js" />
         <option value="$PROJECT_DIR$/public/map/mrtStations.kml" />
         <option value="$PROJECT_DIR$/public/static/map/mrtStations.kml" />
         <option value="$PROJECT_DIR$/src/components/map/mrtStations.kml" />
-        <option value="$PROJECT_DIR$/src/components/map/leaflet.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/map/policeStations.kml" />
+        <option value="$PROJECT_DIR$/src/components/map/leaflet.jsx" />
       </list>
     </option>
   </component>
@@ -173,6 +168,17 @@
               <item name="leaflet" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leaflet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leaflet" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leaflet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leaflet" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="leaflet-providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leaflet" type="b2602c69:ProjectViewProjectNode" />
@@ -255,7 +261,7 @@
       <workItem from="1548478947684" duration="2413000" />
       <workItem from="1548568387910" duration="701000" />
       <workItem from="1548685255306" duration="1000" />
-      <workItem from="1556282363016" duration="2811000" />
+      <workItem from="1556282363016" duration="3993000" />
     </task>
     <task id="LOCAL-00001" summary="leaflet study">
       <created>1548478991933</created>
@@ -268,7 +274,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5926000" />
+    <option name="totallyTimeSpent" value="7108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -329,13 +335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/map/policeStations.kml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="1125" column="40" selection-start-line="1125" selection-start-column="40" selection-end-line="1125" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/leaflet-plugins/layer/vector/KML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -364,27 +363,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/map/policeStations.kml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/leaflet-providers/leaflet-providers.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/map/mrtStations.kml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="582" column="43" selection-start-line="582" selection-start-column="14" selection-end-line="582" selection-end-column="43" />
+        <state relative-caret-position="316">
+          <caret line="1409" column="38" selection-start-line="1409" selection-start-column="19" selection-end-line="1409" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/map/leaflet.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="300">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
     </entry>
