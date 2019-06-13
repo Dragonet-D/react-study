@@ -1,9 +1,10 @@
 @import '~antd/dist/antd.css';
 #root {
   height: 100%;
+  background-color: #fff;
 }
 .App {
-  background-color: #282c34;
+  background-color: #ffffff;
 }
 ul, h1 {
   margin: 0;

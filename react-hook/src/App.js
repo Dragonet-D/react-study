@@ -7,21 +7,28 @@ import CssTest from './components/cssTest';
 import Hoc1 from "./components/hoc";
 import ContextTest from "./components/contextWithHoc";
 import AntdTest from "./components/antdTest";
+import ReduxTest from "./components/reduxTest";
+
+import {Provider} from "react-redux";
+import store from "./store";
 
 import './App.css';
 
 function App() {
-    return (
-        <Router>
-            <Route exact path="/" component={ToDo}/>
-            <Route path="/test" component={Test}/>
-            <Route path="/leaflet" component={LeafLet}/>
-            <Route path="/css" component={CssTest}/>
-            <Route path="/hoc" component={Hoc1}/>
-            <Route path="/context" component={ContextTest}/>
-            <Route path="/antd-test" component={AntdTest}/>
-        </Router>
-    );
+  return (
+    <Provider store={store}>
+      <Router>
+        <Route exact path="/" component={ToDo}/>
+        <Route path="/test" component={Test}/>
+        <Route path="/leaflet" component={LeafLet}/>
+        <Route path="/css" component={CssTest}/>
+        <Route path="/hoc" component={Hoc1}/>
+        <Route path="/context" component={ContextTest}/>
+        <Route path="/antd-test" component={AntdTest}/>
+        <Route path="/redux-test" component={ReduxTest}/>
+      </Router>
+    </Provider>
+  );
 }
 
 export default App;
