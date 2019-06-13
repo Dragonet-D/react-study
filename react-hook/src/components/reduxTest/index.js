@@ -1,19 +1,21 @@
 import React from "react";
-import { connect } from "react-redux";
+import {connect} from "react-redux";
 
 function ReduxTest(props) {
-  const { dispatch } = props;
+  const {dispatch} = props;
+
   function add() {
     dispatch({
-      type:"add"
+      type: "add"
     })
   }
 
   function minus() {
     dispatch({
-      type:"minus"
+      type: "minus"
     })
   }
+
   return (
     <div>
       {
@@ -26,9 +28,13 @@ function ReduxTest(props) {
     </div>
   )
 }
+
 const mapStateToProps = state => {
   return {
     num: state
   }
 };
-export default connect(mapStateToProps)(ReduxTest)
+export default connect(mapStateToProps, {
+  add: () => ({type: "add"}),
+  minus: () => ({type: "minus"})
+})(ReduxTest)
