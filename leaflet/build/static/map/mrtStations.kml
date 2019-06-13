@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>MRT Stations</name>
+  <description><![CDATA[]]></description>
+  <Style id="style60">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style88">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style72">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style47">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style80">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style30">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style57">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style41">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style64">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style43">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style56">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style45">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style86">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style54">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style70">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style63">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style79">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style55">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style40">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style35">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style89">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style61">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style42">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style71">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style34">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style38">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style36">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style52">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style90">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style75">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style50">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style85">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style81">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style44">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style74">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style82">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style76">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style29">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style65">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style87">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style58">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style77">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style59">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style39">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style69">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style48">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style32">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style33">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style68">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style31">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style67">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style73">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style78">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style53">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style46">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style66">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style83">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style51">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style62">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style37">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style84">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style49">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style28">
+    <IconStyle>
+      <Icon>
+        <href>Images/map/train-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Joo Koon</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style60</styleUrl>
+    <Point>
+      <coordinates>103.678535,1.327703,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pioneer</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style88</styleUrl>
+    <Point>
+      <coordinates>103.697121,1.337357,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Boon Lay</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style72</styleUrl>
+    <Point>
+      <coordinates>103.705597,1.338837,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lakeside</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style47</styleUrl>
+    <Point>
+      <coordinates>103.720741,1.344200,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chinese Garden</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style80</styleUrl>
+    <Point>
+      <coordinates>103.732628,1.342376,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Jurong East</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>103.741669,1.334268,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Clementi</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style57</styleUrl>
+    <Point>
+      <coordinates>103.765121,1.315218,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dover</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>103.778618,1.311336,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Buona Vista</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style41</styleUrl>
+    <Point>
+      <coordinates>103.789642,1.307410,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Commonwealth</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style64</styleUrl>
+    <Point>
+      <coordinates>103.798187,1.302519,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Queenstown</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>103.805992,1.294474,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Red Hill</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>103.816727,1.289626,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tiong Bahru</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style43</styleUrl>
+    <Point>
+      <coordinates>103.826981,1.285936,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Outram</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style56</styleUrl>
+    <Point>
+      <coordinates>103.838486,1.281302,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tanjong Pager</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style45</styleUrl>
+    <Point>
+      <coordinates>103.845711,1.276433,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Raffles Place (NS26/EW14)</name>
+    <description>
+      <table border="2" width = "250">
+        <tr>
+          <th colspan="2" bgcolor = "green" style="text-align:center">Platform A: East West Line</th>
+        </tr>
+        <tr>
+          <td>to Pasir Ris</td>
+          <td>5 mins</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "red" style="text-align:center">Platform B: North South Line</th>
+        </tr>
+        <tr>
+          <td>to Jurong East</td>
+          <td>2 mins</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "green" style="text-align:center">Platform C: East West Line</th>
+        </tr>
+        <tr>
+          <td>to Joo Koon</td>
+          <td>Arrived</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "red" style="text-align:center">Platform D: North South Line</th>
+        </tr>
+        <tr>
+          <td>to Marina South Pier</td>
+          <td>Arrived</td>
+        </tr>
+        <tr>
+          <td>Crowd Density</td>
+          <td bgcolor = "red">Congested</td>
+        </tr>
+      </table>
+    </description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>103.851295,1.283898,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>City Hall (NS25/EW13)</name>
+    <description>
+      <table border="2" width = "250">
+        <tr>
+          <th colspan="2" bgcolor = "red" style="text-align:center">Platform A: North South Line</th>
+        </tr>
+        <tr>
+          <td>to Jurong East</td>
+          <td>Arrived</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "green" style="text-align:center">Platform B: East West Line</th>
+        </tr>
+        <tr>
+          <td>to Joo Koon</td>
+          <td>5 mins</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "red" style="text-align:center">Platform C: North South Line</th>
+        </tr>
+        <tr>
+          <td>to Marina South Pier</td>
+          <td>3 mins</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "green" style="text-align:center">Platform D: East West Line</th>
+        </tr>
+        <tr>
+          <td>to Pasir Ris</td>
+          <td>Arrived</td>
+        </tr>
+        <tr>
+          <td>Crowd Density</td>
+          <td bgcolor = "orange">Crowded</td>
+        </tr>
+      </table>
+    </description>
+    <styleUrl>#style86</styleUrl>
+    <Point>
+      <coordinates>103.852234,1.293208,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bugis (EW12/DT14)</name>
+    <description>
+      <table border="2" width = "250">
+        <tr>
+          <th colspan="2" bgcolor = "green" style="text-align:center">Platform A: East West Line</th>
+        </tr>
+        <tr>
+          <td>to Pasir Ris</td>
+          <td>3 mins</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "green" style="text-align:center">Platform B: East West Line</th>
+        </tr>
+        <tr>
+          <td>to Joo Koon</td>
+          <td>2 mins</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "blue" style="text-align:center">Platform A: Downtown Line</th>
+        </tr>
+        <tr>
+          <td>to Chinatown</td>
+          <td>Arrived</td>
+        </tr>
+        <tr>
+          <th colspan="2" bgcolor = "blue" style="text-align:center">Platform B: Downtown Line</th>
+        </tr>
+        <tr>
+          <td>to Bukit Panjang</td>
+          <td>4 mins</td>
+        </tr>
+        <tr>
+          <td>Crowd Density</td>
+          <td bgcolor = "green">Normal</td>
+        </tr>
+      </table>
+    </description>
+    <styleUrl>#style54</styleUrl>
+    <Point>
+      <coordinates>103.856247,1.300674,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lavender</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style70</styleUrl>
+    <Point>
+      <coordinates>103.863007,1.307109,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kallang</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style63</styleUrl>
+    <Point>
+      <coordinates>103.871399,1.311443,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Aljunied</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>103.882988,1.316441,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paya Lebar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style79</styleUrl>
+    <Point>
+      <coordinates>103.893005,1.318136,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Eunos</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style55</styleUrl>
+    <Point>
+      <coordinates>103.903175,1.319702,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kembangan</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style40</styleUrl>
+    <Point>
+      <coordinates>103.912872,1.320989,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bedok</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>103.930061,1.324014,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tanah Merah</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style35</styleUrl>
+    <Point>
+      <coordinates>103.946571,1.327264,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Expo</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style89</styleUrl>
+    <Point>
+      <coordinates>103.961372,1.334622,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Changi Airport</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>103.988846,1.357382,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Simei</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style61</styleUrl>
+    <Point>
+      <coordinates>103.953354,1.343170,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tampines</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style42</styleUrl>
+    <Point>
+      <coordinates>103.945221,1.353081,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pasir Ris</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>103.949524,1.372505,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bukit Batok</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style71</styleUrl>
+    <Point>
+      <coordinates>103.749367,1.348812,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bukit Gombak</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>103.751816,1.358851,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Yew Tee</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>103.747414,1.397485,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kranji</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style38</styleUrl>
+    <Point>
+      <coordinates>103.761795,1.424986,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marsiling</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style36</styleUrl>
+    <Point>
+      <coordinates>103.774086,1.432537,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Woodlands</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>103.786469,1.437063,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Admiralty</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style52</styleUrl>
+    <Point>
+      <coordinates>103.800934,1.440645,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sembawang</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style90</styleUrl>
+    <Point>
+      <coordinates>103.820137,1.449011,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Yishun</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style75</styleUrl>
+    <Point>
+      <coordinates>103.835091,1.429415,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Khatib</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>103.832916,1.417371,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Yio Chu Kang</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style50</styleUrl>
+    <Point>
+      <coordinates>103.844841,1.381933,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ang Mo Kio</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>103.849434,1.370006,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bishan</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>103.848000,1.350721,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Braddell</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style85</styleUrl>
+    <Point>
+      <coordinates>103.845177,1.340328,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Toa Payoh</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>103.847641,1.332734,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Novena</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style81</styleUrl>
+    <Point>
+      <coordinates>103.843834,1.320066,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Newton</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style44</styleUrl>
+    <Point>
+      <coordinates>103.837959,1.312430,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Orchard</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>103.832321,1.304256,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Somerset</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style74</styleUrl>
+    <Point>
+      <coordinates>103.838554,1.300213,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dhoby Ghaut</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style82</styleUrl>
+    <Point>
+      <coordinates>103.845863,1.298582,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>HarbourFront</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>103.820648,1.265331,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chinatown</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style76</styleUrl>
+    <Point>
+      <coordinates>103.843330,1.284542,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Clarke Quay</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>103.846786,1.288468,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Little India</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style65</styleUrl>
+    <Point>
+      <coordinates>103.849831,1.307303,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Farrer Park</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>103.854385,1.312365,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Boon Keng</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style87</styleUrl>
+    <Point>
+      <coordinates>103.861832,1.319573,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Potong Pasir</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style58</styleUrl>
+    <Point>
+      <coordinates>103.869164,1.331329,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Woodleigh</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>103.870689,1.339287,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Serangoon</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style77</styleUrl>
+    <Point>
+      <coordinates>103.873611,1.349198,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kovan</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style59</styleUrl>
+    <Point>
+      <coordinates>103.885193,1.360460,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hougang</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>103.892365,1.370929,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Buangkok</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style39</styleUrl>
+    <Point>
+      <coordinates>103.892838,1.382362,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Punggol</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>103.902214,1.404650,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sengkang</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style69</styleUrl>
+    <Point>
+      <coordinates>103.895515,1.391694,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Choa Chu Kang</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style48</styleUrl>
+    <Point>
+      <coordinates>103.744270,1.385462,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Telok Blangah</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>103.809731,1.270533,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Labrador Park</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style32</styleUrl>
+    <Point>
+      <coordinates>103.802971,1.272314,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pasir Panjang</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style33</styleUrl>
+    <Point>
+      <coordinates>103.791451,1.276218,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Haw Par Villa</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style68</styleUrl>
+    <Point>
+      <coordinates>103.781898,1.282354,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kent Ridge</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>103.784386,1.293380,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>One-North</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>103.787109,1.299279,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Holland Village</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style67</styleUrl>
+    <Point>
+      <coordinates>103.796249,1.312151,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Farrer Road</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>103.807495,1.317256,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Botanic Gardens</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style73</styleUrl>
+    <Point>
+      <coordinates>103.815392,1.322512,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Caldecott</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>103.839172,1.337743,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marymount</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style78</styleUrl>
+    <Point>
+      <coordinates>103.839516,1.349005,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lorong Chuan</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style53</styleUrl>
+    <Point>
+      <coordinates>103.863564,1.351944,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bartley</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style46</styleUrl>
+    <Point>
+      <coordinates>103.879959,1.342527,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tai Seng</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style66</styleUrl>
+    <Point>
+      <coordinates>103.887878,1.335834,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MacPherson</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style83</styleUrl>
+    <Point>
+      <coordinates>103.890175,1.326609,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dakota</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style51</styleUrl>
+    <Point>
+      <coordinates>103.888351,1.308139,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mountbatten</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>103.882599,1.306337,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Stadium</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>103.875282,1.302776,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Nicoll Highway</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style62</styleUrl>
+    <Point>
+      <coordinates>103.863609,1.299708,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Promenade</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>103.861053,1.293101,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Esplanade</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style37</styleUrl>
+    <Point>
+      <coordinates>103.855415,1.293444,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bras Basah</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style84</styleUrl>
+    <Point>
+      <coordinates>103.850624,1.296898,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bayfront</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style49</styleUrl>
+    <Point>
+      <coordinates>103.859299,1.282338,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marina Bay</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>103.854797,1.276057,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
