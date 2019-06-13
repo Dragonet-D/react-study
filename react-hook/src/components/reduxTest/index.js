@@ -1,8 +1,8 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {connect} from "react-redux";
 
 function ReduxTest(props) {
-  const {dispatch} = props;
+  const {dispatch, num} = props;
 
   function add() {
     dispatch({
@@ -17,15 +17,13 @@ function ReduxTest(props) {
   }
 
   return (
-    <div>
-      {
-        props.num
-      }
+    <Fragment>
+      {num}
       <div>
         <button onClick={add}>-</button>
         <button onClick={minus}>+</button>
       </div>
-    </div>
+    </Fragment>
   )
 }
 
