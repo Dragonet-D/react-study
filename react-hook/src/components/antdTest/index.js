@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import "./style.scss";
 
 function AFormCreate(Comp) {
@@ -101,7 +101,7 @@ function AFormCreate(Comp) {
 class FormItem extends React.Component {
   render() {
     return (
-      <div>
+      <Fragment>
         {
           this.props.children
         }
@@ -110,7 +110,7 @@ class FormItem extends React.Component {
             <p>{this.props.help}</p>
           )
         }
-      </div>
+      </Fragment>
     )
   }
 }
