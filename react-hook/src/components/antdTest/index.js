@@ -117,12 +117,12 @@ class FormItem extends React.Component {
 
 function Input(props) {
   return (
-    <React.Fragment>
+    <Fragment>
       {
         props.prefix
       }
       <input type="text" {...props}/>
-    </React.Fragment>
+    </Fragment>
   )
 }
 
