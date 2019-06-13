@@ -5,6 +5,7 @@ import Test from './components/hooks/Test';
 import LeafLet from './components/leaflet';
 import CssTest from './components/cssTest';
 import Hoc1 from "./components/hoc";
+import ContextTest from "./components/context";
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/leaflet" component={LeafLet}/>
             <Route path="/css" component={CssTest}/>
             <Route path="/hoc" component={Hoc1}/>
+            <Route path="/context" component={ContextTest}/>
         </Router>
     );
 }
