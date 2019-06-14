@@ -23,8 +23,8 @@ export function minus() {
 }
 
 export function asyncAdd() {
-  return (dispatch, state) => {
-    console.log(state);
+  return (dispatch, getState) => {
+    console.log(getState());
     // 模拟异步操作
     setTimeout(() => {
       dispatch({type: "add"})
