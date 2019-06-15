@@ -1,6 +1,5 @@
 import React from "react";
 import WithStupidCom, { WithLog } from "./Hoc1";
-import "./style.scss";
 
 function HocTest(props) {
     const { name } = props;

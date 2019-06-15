@@ -6,7 +6,7 @@ const WithStupidCom = (Comp) => {
 
     class NewComponent extends Component {
         componentDidMount() {
-            console.log("do something");
+            // console.log("do something");
         }
 
         render() {

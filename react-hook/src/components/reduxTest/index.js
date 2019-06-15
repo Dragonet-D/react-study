@@ -1,38 +1,27 @@
 import React, {Fragment} from "react";
 import {connect} from "react-redux";
+import {add, minus, asyncAdd} from "./../../store/counterReducer";
 
 function ReduxTest(props) {
-  const {dispatch, num} = props;
-
-  function add() {
-    dispatch({
-      type: "add"
-    })
-  }
-
-  function minus() {
-    dispatch({
-      type: "minus"
-    })
-  }
+  const {num} = props;
 
   return (
-    <Fragment>
-      {num}
-      <div>
-        <button onClick={add}>-</button>
-        <button onClick={minus}>+</button>
-      </div>
-    </Fragment>
+      <Fragment>
+        {num}
+        <div>
+          <button onClick={() => props.add()}>-</button>
+          <button onClick={() => props.minus()}>+</button>
+          <button onClick={() => props.asyncAdd()}>asyncAdd</button>
+        </div>
+      </Fragment>
   )
 }
 
 const mapStateToProps = state => {
   return {
-    num: state
+    num: state.counter
   }
 };
 export default connect(mapStateToProps, {
-  add: () => ({type: "add"}),
-  minus: () => ({type: "minus"})
+  add, minus, asyncAdd
 })(ReduxTest)

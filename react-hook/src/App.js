@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import ToDo from './components/hooks/ToDo';
 import Test from './components/hooks/Test';
 import LeafLet from './components/leaflet';
@@ -13,13 +13,47 @@ import NoMatch from "./components/noMatch";
 import {Provider} from "react-redux";
 import store from "./store";
 
+import {Button} from "antd";
+
 import './App.css';
+
+function TestApp(props) {
+  return (
+    <div>
+      <Link to="/">
+        <Button>Home</Button>
+      </Link>
+      <Link to="/test">
+        <Button>test</Button>
+      </Link>
+      <Link to="/leaflet">
+        <Button>leaflet</Button>
+      </Link>
+      <Link to="/css">
+        <Button>css</Button>
+      </Link>
+      <Link to="/hoc">
+        <Button>hoc</Button>
+      </Link>
+      <Link to="/context">
+        <Button>context</Button>
+      </Link>
+      <Link to="/antd-test">
+        <Button>antd-test</Button>
+      </Link>
+      <Link to="/redux-test">
+        <Button>redux-test</Button>
+      </Link>
+    </div>
+  )
+}
 
 function App() {
   return (
     <Provider store={store}>
-      <Router>
+      <BrowserRouter>
         <Switch>
+          <TestApp/>
           <Route exact path="/" component={ToDo}/>
           <Route path="/test" component={Test}/>
           <Route path="/leaflet" component={LeafLet}/>
@@ -30,7 +64,7 @@ function App() {
           <Route path="/redux-test" component={ReduxTest}/>
           <Route component={NoMatch}/>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </Provider>
   );
 }
