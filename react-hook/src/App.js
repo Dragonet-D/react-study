@@ -1,5 +1,5 @@
-import React from 'react';
-import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import React, {useState} from 'react';
+import {BrowserRouter, Link, Route, Switch, Redirect} from 'react-router-dom';
 import ToDo from './components/hooks/ToDo';
 import Test from './components/hooks/Test';
 import LeafLet from './components/leaflet';
@@ -9,6 +9,7 @@ import ContextTest from "./components/contextWithHoc";
 import AntdTest from "./components/antdTest";
 import ReduxTest from "./components/reduxTest";
 import NoMatch from "./components/noMatch";
+import RouterTest from "./components/reactRouter";
 
 import {Provider} from "react-redux";
 import store from "./store";
@@ -44,7 +45,56 @@ function TestApp(props) {
       <Link to="/redux-test">
         <Button>redux-test</Button>
       </Link>
+      <Link to="/router">
+        <Button>router-test</Button>
+      </Link>
     </div>
+  )
+}
+
+// 路由守卫: 定义可以验证的高阶组件
+function PrivateRoute({component: Com, ...rest}) {
+  return (
+    <Route {...rest} render={
+      (props) => auth.isLogin ? <Com {...props}/> :
+        <Redirect to={{
+          pathname: "/login",
+          state: {
+            from: props.location.pathname
+          }
+        }}/>
+    }/>
+  )
+}
+
+// 接口
+const auth = {
+  isLogin: false,
+  login(cb) {
+    this.isLogin = true;
+    setTimeout(cb("成功"), 300)
+  }
+};
+
+// 登录组件
+function Login(props) {
+  const [isLogin, setIsLogin] = useState(false);
+
+  function loginIn() {
+    auth.login(() => {
+      setIsLogin(true)
+    })
+  }
+
+  const {from } = props.location.state;
+  if (isLogin) {
+    return <Redirect to={from}/>
+  }
+  return (
+    <React.Fragment>
+      <p>请登录</p>
+      <button onClick={loginIn}>登录</button>
+    </React.Fragment>
   )
 }
 
@@ -52,8 +102,8 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
+        <TestApp/>
         <Switch>
-          <TestApp/>
           <Route exact path="/" component={ToDo}/>
           <Route path="/test" component={Test}/>
           <Route path="/leaflet" component={LeafLet}/>
@@ -62,6 +112,8 @@ function App() {
           <Route path="/context" component={ContextTest}/>
           <Route path="/antd-test" component={AntdTest}/>
           <Route path="/redux-test" component={ReduxTest}/>
+          <PrivateRoute path="/router" component={RouterTest}/>
+          <Route path="/login" component={Login}/>
           <Route component={NoMatch}/>
         </Switch>
       </BrowserRouter>

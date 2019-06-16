@@ -6,10 +6,11 @@ import {
 import logger from "redux-logger";
 import thunk from "redux-thunk";
 import counter from "./counterReducer";
+import user from "./user";
 
 
 export default createStore(
-    combineReducers({counter}),
+    combineReducers({counter, user}),
     applyMiddleware(
         logger,
         thunk
