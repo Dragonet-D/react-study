@@ -14,6 +14,11 @@ function AAA() {
 
 const menuGlobal = [
   {
+    path: '/login',
+    models: () => [import('./models/login')],
+    component: () => import('./pages/login')
+  },
+  {
     path: '/todo',
     models: () => [import('./models/todo')],
     component: () => import('./pages/todo')

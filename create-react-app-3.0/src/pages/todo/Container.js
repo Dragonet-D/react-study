@@ -58,6 +58,6 @@ function ToDo(props) {
 export default withStyles(style)(
   connect(({ todo, loading }) => ({
     todo,
-    submitting: loading.effects['login/login']
+    loading
   }))(ToDo)
 );

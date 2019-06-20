@@ -3,7 +3,6 @@ export default {
   state: {
     dataList: []
   },
-
   reducers: {
     addToDo(state, { payload }) {
       return {
