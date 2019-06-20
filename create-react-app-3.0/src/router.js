@@ -1,18 +1,37 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// eslint-disable-next-line import/no-unresolved
-import ToDo from 'pages/todo';
-import App from './App';
+import { Router, Route, Switch } from 'dva/router';
+import dynamic from 'dva/dynamic';
 
-function AppRouter() {
+const menuGlobal = [
+  {
+    path: '/',
+    component: () => import('./App')
+  },
+  {
+    path: '/todo',
+    models: () => [import('./models/todo')],
+    component: () => import('./pages/todo')
+  }
+];
+
+function RouterConfig({ history, app }) {
   return (
-    <BrowserRouter>
+    <Router history={history}>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/todo" component={ToDo} />
+        {menuGlobal.map(({ path, ...dynamics }) => (
+          <Route
+            key={path}
+            path={path}
+            exact
+            component={dynamic({
+              app,
+              ...dynamics
+            })}
+          />
+        ))}
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 
-export default AppRouter;
+export default RouterConfig;
