@@ -1,12 +1,7 @@
 {
-  "extends": [
-    "airbnb",
-    "prettier"
-  ],
+  "extends": ["airbnb", "prettier"],
   "parser": "babel-eslint",
-  "plugins": [
-    "prettier"
-  ],
+  "plugins": ["prettier", "compat", "react"],
   "env": {
     "node": true,
     "es6": true,
@@ -16,22 +11,67 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
-    "prettier/prettier": [
-      "warn"
-    ],
-    "linebreak-style": [
-      "warn",
-      "windows"
-    ],
+    "react/sort-comp": "off",
+    "no-debugger": "off",
+    "class-methods-use-this": "off",
+    "no-unused-vars": "warn",
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "prettier/prettier": ["warn"],
+    "linebreak-style": ["warn", "windows"],
+    "import/prefer-default-export": "off",
     "implicit-arrow-linebreak": "off",
+    "no-trailing-spaces": "off",
+    "generator-star-spacing": [0],
+    "consistent-return": [0],
+    "react/forbid-prop-types": [0],
+    "global-require": [1],
+    "react/jsx-no-bind": [0],
+    "react/prop-types": [0],
+    "react/no-multi-comp": [0],
+    "react/prefer-stateless-function": [0],
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "parens-new-line",
+        "prop": "ignore"
+      }
+    ],
+    "no-else-return": [0],
+    "no-restricted-syntax": [0],
+    "import/no-extraneous-dependencies": [0],
+    "no-use-before-define": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "jsx-a11y/no-noninteractive-element-interactions": [0],
+    "jsx-a11y/click-events-have-key-events": [0],
+    "jsx-a11y/anchor-is-valid": [0],
+    "jsx-a11y/label-has-for": 0,
+    "no-nested-ternary": [0],
+    "arrow-body-style": [0],
+    "import/extensions": [0],
+    "no-bitwise": [0],
+    "no-cond-assign": [0],
+    "import/no-unresolved": [0],
     "comma-dangle": "off",
-    "indent": "off",
-    "no-trailing-spaces": "off"
+    "object-curly-newline": [0],
+    "function-paren-newline": [0],
+    "no-restricted-globals": [0],
+    "require-yield": [1],
+    "compat/compat": "error",
+    "react/jsx-tag-spacing": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
   }
 }

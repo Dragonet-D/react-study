@@ -1,12 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import '@babel/polyfill';
+import 'url-polyfill';
+import dva from 'dva';
+import createHistory from 'history/createHashHistory';
+import createLoading from 'dva-loading';
 import './index.css';
-import AppRouter from './router';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<AppRouter />, document.getElementById('root'));
+// 1. Initialize
+const app = dva({
+  history: createHistory()
+});
+
+// 2. Plugins
+app.use(createLoading());
+
+// 3. Register global model
+app.model(require('./models/global').default);
+
+// 4. Router
+app.router(require('./router').default);
+
+// 5. Start
+app.start('#root');
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
