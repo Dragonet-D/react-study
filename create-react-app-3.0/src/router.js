@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Router, Route, Switch } from 'dva/router';
 import dynamic from 'dva/dynamic';
 
+const App = lazy(() => import('./App'));
+
+function AAA() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <App />
+    </Suspense>
+  );
+}
+
 const menuGlobal = [
-  {
-    path: '/',
-    component: () => import('./App')
-  },
   {
     path: '/todo',
     models: () => [import('./models/todo')],
@@ -29,6 +35,7 @@ function RouterConfig({ history, app }) {
             })}
           />
         ))}
+        <Route exact path="/" component={AAA} />
       </Switch>
     </Router>
   );

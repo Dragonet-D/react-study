@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core';
+import { connect } from 'dva';
 import { Input } from 'components/common';
 import styles from './styles/Container.module.less';
 
@@ -12,10 +13,9 @@ const style = () => ({
 });
 
 function ToDo(props) {
-  const { classes } = props;
-
+  const { classes, dispatch, todo } = props;
+  const { dataList } = todo;
   const [inputValue, setInputValue] = useState('');
-  const [dataList, setDataList] = useState([]);
 
   function handleChange(e) {
     const { value } = e.target;
@@ -23,14 +23,19 @@ function ToDo(props) {
   }
 
   function handleSubmit(e) {
-    e.preventDefault();
     if (inputValue.trim() && e.keyCode === 13) {
+      e.preventDefault();
       dataList.push({
         id: Math.random(),
         value: inputValue
       });
-      setDataList(dataList);
       setInputValue('');
+      dispatch({
+        type: 'todo/addToDo',
+        payload: {
+          dataList
+        }
+      });
     }
   }
 
@@ -50,4 +55,9 @@ function ToDo(props) {
   );
 }
 
-export default withStyles(style)(ToDo);
+export default withStyles(style)(
+  connect(({ todo, loading }) => ({
+    todo,
+    submitting: loading.effects['login/login']
+  }))(ToDo)
+);

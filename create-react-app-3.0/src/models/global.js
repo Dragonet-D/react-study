@@ -1,5 +1,12 @@
 export default {
   namespace: 'global',
+  state: {
+    collapsed: false,
+    notices: [],
+    terms: []
+  },
+
+  reducers: {},
   subscriptions: {
     setup({ history }) {
       // Subscribe history(url) change, trigger `load` action if pathname is `/`

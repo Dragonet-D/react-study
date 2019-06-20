@@ -3,7 +3,6 @@ import 'url-polyfill';
 import dva from 'dva';
 import { createBrowserHistory } from 'history';
 import createLoading from 'dva-loading';
-import global from './models/global';
 import './index.css';
 
 // 1. Initialize
@@ -15,10 +14,10 @@ const app = dva({
 app.use(createLoading());
 
 // 3. Register global model
-app.model(global.default);
+app.model(require('./models/global').default);
 
 // 4. Router
-app.router(require('./router'));
+app.router(require('./router').default);
 
 // 5. Start
 app.start('#root');
