@@ -1,7 +1,7 @@
-import request from 'commons/utils/request';
+import fetch from 'commons/utils/request';
 
-export function login(username, password) {
-  return request('/api/login', {
+export async function login({ username, password }) {
+  return fetch.post('/api/login', {
     username,
     password
   });

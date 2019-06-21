@@ -1,15 +1,9 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
 import dynamic from 'dva/dynamic';
 
-const App = lazy(() => import('./App'));
-
-function AAA() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <App />
-    </Suspense>
-  );
+function App() {
+  return <div>app</div>;
 }
 
 const menuGlobal = [
@@ -33,14 +27,13 @@ function RouterConfig({ history, app }) {
           <Route
             key={path}
             path={path}
-            exact
             component={dynamic({
               app,
               ...dynamics
             })}
           />
         ))}
-        <Route exact path="/" component={AAA} />
+        <Route path="/" component={App} />
       </Switch>
     </Router>
   );

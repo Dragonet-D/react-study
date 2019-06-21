@@ -1,4 +1,8 @@
+import { routerRedux } from 'dva/router';
 import { login } from 'api/login';
+import store from '../index';
+
+const { dispatch } = store;
 
 export default {
   namespace: 'login',
@@ -6,8 +10,12 @@ export default {
     userInfo: []
   },
   effects: {
-    *loginRequest(_, { call, put }) {
-      const result = call(login, 'aaaa', '1232');
+    *loginRequest({ payload }, { call, put }) {
+      const result = yield call(login, payload);
+      console.log(result);
+      if (result && result.code === '00000000') {
+        dispatch(routerRedux.push('/todo'));
+      }
       yield put({
         type: 'login',
         userInfo: result
