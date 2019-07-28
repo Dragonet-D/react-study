@@ -17,7 +17,9 @@ function HooksOptimization() {
     count
   }), [count]);
 
-  const onButtonClick = useCallback(() => dispatchCount({type: 'add'}), []);
+  // const onButtonClick = useCallback(() => dispatchCount({type: 'add'}), []);
+
+  const onButtonClick = useMemo(() => dispatchCount({type: 'add'}), []);
 
   function handleChange(e) {
     const { value } = e.target;
