@@ -1,4 +1,4 @@
-import React, {useReducer, memo, useMemo, useState, useCallback} from "react";
+import React, {useReducer, memo, useMemo, useState, useCallback, useRef} from "react";
 
 function countReducer(state, action) {
   switch (action.type) {
@@ -12,6 +12,8 @@ function countReducer(state, action) {
 function HooksOptimization() {
   const [count, dispatchCount] = useReducer(countReducer,0);
   const [value, setValue] = useState("");
+  const countRef = useRef(); // {current: ''} 每次返回同一个对象
+  countRef.current = count;
 
   const config = useMemo(() => ({
     count
@@ -19,18 +21,25 @@ function HooksOptimization() {
 
   // const onButtonClick = useCallback(() => dispatchCount({type: 'add'}), []);
 
-  const onButtonClick = useMemo(() => dispatchCount({type: 'add'}), []);
+  const onButtonClick = useMemo(() => () => dispatchCount({type: 'add'}), []);
 
   function handleChange(e) {
     const { value } = e.target;
     setValue(value);
   }
 
+  const handleAlertButtonClick = useCallback(() => (
+    setTimeout(() => {
+      alert(countRef.current);
+    }, 2000)
+  ), []);
+
   return  (
     <>
       <input type="text" onChange={handleChange} value={value}/>
       <div>{count}</div>
       <Child config={config} onButtonClick={onButtonClick}/>
+      <button onClick={handleAlertButtonClick}>alert count</button>
     </>
   )
 }
