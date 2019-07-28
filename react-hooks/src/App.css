@@ -1,7 +1,7 @@
 @import '~antd/dist/antd.css';
 #root {
   height: 100%;
-  color: red;
+  color: cornflowerblue;
   background-color: #ffffff;
 }
 .App {

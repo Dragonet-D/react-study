@@ -10,6 +10,7 @@ import AntdTest from "./components/antdTest";
 import ReduxTest from "./components/reduxTest";
 import NoMatch from "./components/noMatch";
 import RouterTest from "./components/reactRouter";
+import HooksOptimization from './components/hooks/HooksOptimization';
 
 import {Provider} from "react-redux";
 import store from "./store";
@@ -114,6 +115,7 @@ function App() {
           <Route path="/redux-test" component={ReduxTest}/>
           <PrivateRoute path="/router" component={RouterTest}/>
           <Route path="/login" component={Login}/>
+          <Route path="/hooks-optimization" component={HooksOptimization}/>
           <Route component={NoMatch}/>
         </Switch>
       </BrowserRouter>
