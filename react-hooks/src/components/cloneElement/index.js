@@ -12,9 +12,9 @@ const style = {
   width: '100%'
 }
 
-function B({children, render}) {
+function B({children, render = <div/> }) {
   return cloneElment(render, {
-    style,
+    style: Object.assign({}, render.props.style, style),
     children
   })
 }
