@@ -1,0 +1,23 @@
+.pie {
+  position: relative;
+  margin: 1em auto;
+  padding: 0;
+  width: 32em;
+  height: 32em;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+}
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+.slice-one {
+  transform: rotate(30deg) skewY(-30deg);
+  background: black;
+}
