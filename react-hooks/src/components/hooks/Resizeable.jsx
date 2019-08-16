@@ -31,7 +31,7 @@ function Resizeable(props) {
   }, []);
   return (
       <>
-        <Button onClick={onOpen} id={`color_picker_btn_${id}`}>Test</Button>
+        <Button onClick={onOpen} id={`color_picker_btn_${id}`}>test</Button>
         <ClickAwayListener onClickAway={onClose}>
           <Collapse
             in={open}
