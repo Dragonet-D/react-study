@@ -1,4 +1,5 @@
 import React, {useReducer, memo, useMemo, useState, useCallback, useRef} from "react";
+import { Button } from 'antd';
 
 function countReducer(state, action) {
   switch (action.type) {
@@ -50,10 +51,23 @@ const Child = memo(function Child({config, onButtonClick}) {
   function add() {
     onButtonClick()
   }
+
+  const handleTest = useCallback(() => {
+    fetch('/api/aaaa', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify({
+        submitdata: '1$1}2$3}3$2}4$2}5$3}6$1}7$2}8$3}9$2}10$2}11$2}12$2}13$2}14$1}15$2}16$2}17$1}18$1'
+      })
+    });
+  }, []);
   return (
     <div>
       <span>{config.count}</span>
       <button onClick={add}>test</button>
+      <Button onClick={handleTest}>Test</Button>
     </div>
   )
 });
