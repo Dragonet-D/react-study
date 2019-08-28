@@ -63,6 +63,7 @@ const Child = memo(function Child({config, onButtonClick}) {
       })
     });
   }, []);
+  
   return (
     <div>
       <span>{config.count}</span>
