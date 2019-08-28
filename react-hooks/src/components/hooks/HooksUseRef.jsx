@@ -10,9 +10,9 @@ function HooksUseRef({ impressionTracker, propA, propB, propC }) {
     tracker(params);
   }, []);
   return (
-    <>
+    <div>
       <Child propA={propA} propB={propB} propC={propC} />
-    </>
+    </div>
   )
 }
 
