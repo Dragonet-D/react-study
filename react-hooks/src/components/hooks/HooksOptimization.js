@@ -76,21 +76,21 @@ const Child = memo(function Child({config, onButtonClick}) {
   )
 });
 
-function CountButton({onClick, count}) {
+const CountButton = memo(({onClick, count}) => {
   return <button onClick={onClick}>{count}</button>
-}
+});
 
 function TestUseCallback() {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
-  function handleCount1() {
+  const handleCount1 = useCallback(() => {
     setCount1(count => count + 1);
-  }
+  }, []);
 
-  function handleCount2() {
+  const handleCount2 = useCallback(() => {
     setCount2(count => count + 1);
-  }
+  }, []);
   return (
     <>
       <CountButton onClick={handleCount1} count={count1}/>
