@@ -76,4 +76,26 @@ const Child = memo(function Child({config, onButtonClick}) {
   )
 });
 
-export default HooksOptimization;
+function CountButton({onClick, count}) {
+  return <button onClick={onClick}>{count}</button>
+}
+
+function TestUseCallback() {
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+
+  function handleCount1() {
+    setCount1(count => count + 1);
+  }
+
+  function handleCount2() {
+    setCount2(count => count + 1);
+  }
+  return (
+    <>
+      <CountButton onClick={handleCount1} count={count1}/>
+      <CountButton onClick={handleCount2} count={count2}/>
+    </>
+  )
+}
+export default TestUseCallback;
