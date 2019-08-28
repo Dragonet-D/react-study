@@ -35,6 +35,9 @@ function HooksOptimization() {
     }, 2000)
   ), []);
 
+  const testUseMemo = useMemo(() => [1, 2, 3], []);
+  console.log(testUseMemo);
+
   return  (
     <>
       <input type="text" onChange={handleChange} value={value}/>
@@ -63,7 +66,7 @@ const Child = memo(function Child({config, onButtonClick}) {
       })
     });
   }, []);
-  
+
   return (
     <div>
       <span>{config.count}</span>
