@@ -41,4 +41,11 @@ function useFriendStatus(friendID) {
   return isOnline;
 }
 
+// use state use
+function TestUseState() {
+  const [state, setState] = useState(() => ({ name: 'hello' }))
+}
+
+// react use Object.is comparision algorithm
+
 export default HooksUseRef;
