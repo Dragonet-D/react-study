@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 function HooksUseRef({ impressionTracker, propA, propB, propC }) {
   const test = useRef({
@@ -20,6 +20,25 @@ function Child({ propA, propB, propC }) {
       <div>{propC}</div>
     </>
   )
+}
+
+const ChatAPI = {};
+
+function useFriendStatus(friendID) {
+  const [isOnline, setIsOnline] = useState(null);
+
+  useEffect(() => {
+    function handleStatusChange(status) {
+      setIsOnline(status.isOnline);
+    }
+
+    ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange);
+    return () => {
+      ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange);
+    };
+  });
+
+  return isOnline;
 }
 
 export default HooksUseRef;
