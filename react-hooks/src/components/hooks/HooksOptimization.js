@@ -1,4 +1,5 @@
 import React, {useReducer, memo, useMemo, useState, useCallback, useRef} from "react";
+import { Button } from 'antd';
 
 function countReducer(state, action) {
   switch (action.type) {
@@ -34,6 +35,9 @@ function HooksOptimization() {
     }, 2000)
   ), []);
 
+  const testUseMemo = useMemo(() => [1, 2, 3], []);
+  console.log(testUseMemo);
+
   return  (
     <>
       <input type="text" onChange={handleChange} value={value}/>
@@ -50,12 +54,48 @@ const Child = memo(function Child({config, onButtonClick}) {
   function add() {
     onButtonClick()
   }
+
+  const handleTest = useCallback(() => {
+    fetch('/api/aaaa', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify({
+        submitdata: '1$1}2$3}3$2}4$2}5$3}6$1}7$2}8$3}9$2}10$2}11$2}12$2}13$2}14$1}15$2}16$2}17$1}18$1'
+      })
+    });
+  }, []);
+
   return (
     <div>
       <span>{config.count}</span>
       <button onClick={add}>test</button>
+      <Button onClick={handleTest}>Test</Button>
     </div>
   )
 });
 
-export default HooksOptimization;
+const CountButton = memo(({onClick, count}) => {
+  return <button onClick={onClick}>{count}</button>
+});
+
+function TestUseCallback() {
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+
+  const handleCount1 = useCallback(() => {
+    setCount1(count => count + 1);
+  }, []);
+
+  const handleCount2 = useCallback(() => {
+    setCount2(count => count + 1);
+  }, []);
+  return (
+    <>
+      <CountButton onClick={handleCount1} count={count1}/>
+      <CountButton onClick={handleCount2} count={count2}/>
+    </>
+  )
+}
+export default TestUseCallback;
