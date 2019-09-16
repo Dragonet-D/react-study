@@ -1,6 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import {Input, Checkbox} from 'antd';
-import './style.scss';
 
 function ToDo() {
     const [todo, setTodo] = useState('');
