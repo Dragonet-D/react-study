@@ -31,7 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/react-source-code" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,7 +96,7 @@
       <workItem from="1566387665591" duration="91000" />
       <workItem from="1566388282583" duration="1261000" />
       <workItem from="1567177459340" duration="565000" />
-      <workItem from="1567216727912" duration="277000" />
+      <workItem from="1567216727912" duration="1300000" />
     </task>
     <servers />
   </component>
