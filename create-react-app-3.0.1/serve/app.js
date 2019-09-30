@@ -34,7 +34,6 @@ const newUser = new User(user);
 newUser.save();
 
 router.get('/', async (ctx, next) => {
-  let val = null;
   const data = await User.findOne({ username: 'xiaolong' });
   console.log(data);
   const result = {
