@@ -1,6 +1,15 @@
 const Koa = require('koa');
 const router = require('koa-router')();
 const mongoose = require('mongoose');
+const cors = require('koa2-cors');
+
+app.use(cors({
+  exposeHeaders: ['WWW-Authenticate', 'Server-Authorization', 'Date'],
+  maxAge: 100,
+  credentials: true,
+  allowMethods: ['GET', 'POST', 'OPTIONS'],
+  allowHeaders: ['Content-Type', 'Authorization', 'Accept', 'X-Custom-Header', 'anonymous']
+}));
 
 const db = mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true, useUnifiedTopology: true });
 
