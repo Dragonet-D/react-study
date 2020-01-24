@@ -6,7 +6,7 @@
       "severity": "warning",
       "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
     },
-    "linebreak-style": [true, "CRLF"]
+    "linebreak-style": false
   },
   "linterOptions": {
     "exclude": [
