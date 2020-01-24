@@ -1,11 +1,12 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier", "prettier"],
   "rules": {
     "no-debugger": false,
     "no-console": {
       "severity": "warning",
       "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
-    }
+    },
+    "linebreak-style": [true, "CRLF"]
   },
   "linterOptions": {
     "exclude": [
