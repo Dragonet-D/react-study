@@ -1,13 +1,13 @@
-import React from "react";
+import * as React from "react";
 
-type IPorp = {
+interface IPorp {
   index: string
 }
 
 class Test extends React.Component<IPorp, any>{
-  render() {
+  public render() {
     return (
-        <div>123</div>
+        <div>{this.props.index}</div>
     )
   }
 }
