@@ -1,3 +1,4 @@
+import {Input} from 'antd';
 import * as React from 'react';
 
 interface IProps {
@@ -6,7 +7,8 @@ interface IProps {
 }
 
 const NameEditComponent = (props: IProps) => {
-  return <input type='text' value={props.userName} onChange={props.onChange} />;
+  const {userName, onChange} = props
+  return <Input type='text' value={userName} onChange={onChange} />;
 };
 
 export default NameEditComponent
