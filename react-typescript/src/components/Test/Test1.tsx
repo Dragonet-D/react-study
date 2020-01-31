@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface IProps {
   aProps: string;
@@ -12,19 +12,19 @@ interface IState {
 
 class Test1 extends React.PureComponent<IProps, IState> {
   public readonly state = {
-    aState: "",
-    bState: ""
+    aState: '',
+    bState: ''
   };
 
   public test1 = () => {
     this.setState({
-      aState: "123"
+      aState: '123'
     });
   };
 
   public test2 = () => {
     this.setState({
-      bState: "b123"
+      bState: 'b123'
     });
   };
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Test from "./components/Test/index";
+import Test from './components/Test/index';
 
 class App extends React.Component {
   public constructor(props: any) {
@@ -12,7 +12,7 @@ class App extends React.Component {
 
   public render() {
     return (
-      <div className="App">
+      <div className='App'>
         <Test index='123' getData={this.handleDataGet}/>
       </div>
     );

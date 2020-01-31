@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 class Test2 extends React.Component<any, any>{
   public render() {
