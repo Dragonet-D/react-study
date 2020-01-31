@@ -12,7 +12,8 @@
       "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
     },
     "linebreak-style": false,
-    "quotemark": [true, "single", "avoid-escape"]
+    "quotemark": [true, "single", "avoid-escape"],
+    "jsx-boolean-value": false
   },
   "linterOptions": {
     "exclude": [
