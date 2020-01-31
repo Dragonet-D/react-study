@@ -4,6 +4,7 @@ import './App.css'
 import StateTest from './components/03_State/App'
 import Test from './components/Test/index';
 import Callback from './components/04_Callback/App';
+import Refactor from './components/05_Refactor/App';
 
 class App extends React.Component {
   public constructor(props: any) {
@@ -20,10 +21,12 @@ class App extends React.Component {
       <Router>
         <Link to='/StateTest'>StateTest</Link>
         <Link to='/Callback'>Callback</Link>
+        <Link to='/Refactor'>Refactor</Link>
         <Switch>
           <Route exact path='/' component={TestCom} />
           <Route path='/StateTest' component={StateTest} />
           <Route path='/Callback' component={Callback} />
+          <Route path='/Refactor' component={Refactor} />
         </Switch>
       </Router>
     );
