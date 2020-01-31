@@ -1,14 +1,15 @@
 import * as React from "react";
 
-interface IPorp {
-  index: string;
+interface IPorps {
+  index: string,
+  getData?: any
 }
 
 interface IState {
-  count: number;
+  count: number
 }
 
-class Test extends React.Component<IPorp, IState> {
+class Test extends React.Component<IPorps, IState> {
   public readonly state: Readonly<IState> = {
     count: 0
   };
@@ -24,8 +25,13 @@ class Test extends React.Component<IPorp, IState> {
     });
   };
 
+  public handleClick1 = () => {
+    const {getData} = this.props
+    getData('hello react')
+  }
+
   public render() {
-    const { index } = this.props;
+    const { index,  } = this.props;
     const { count } = this.state;
 
     return (
@@ -33,6 +39,7 @@ class Test extends React.Component<IPorp, IState> {
         <div>{index}</div>
         <div>{count}</div>
         <button onClick={this.handleChange}>test</button>
+        <button onClick={this.handleClick1}>test1</button>
       </React.Fragment>
     );
   }
