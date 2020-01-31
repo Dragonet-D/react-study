@@ -13,7 +13,12 @@
     },
     "linebreak-style": false,
     "quotemark": [true, "single", "avoid-escape"],
-    "jsx-boolean-value": false
+    "jsx-boolean-value": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false
   },
   "linterOptions": {
     "exclude": [

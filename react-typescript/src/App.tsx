@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import './App.css'
 import StateTest from './components/03_State/App'
 import Test from './components/Test/index';
 
@@ -19,7 +20,7 @@ class App extends React.Component {
         <Link to='/StateTest'>StateTest</Link>
         <Switch>
           <Route exact path='/' component={TestCom} />
-          <Route path='StateTest' component={StateTest} />
+          <Route path='/StateTest' component={StateTest} />
         </Switch>
       </Router>
     );
