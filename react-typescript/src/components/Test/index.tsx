@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface IPorps {
   index: string,
@@ -31,7 +31,7 @@ class Test extends React.Component<IPorps, IState> {
   }
 
   public render() {
-    const { index,  } = this.props;
+    const { index} = this.props;
     const { count } = this.state;
 
     return (
