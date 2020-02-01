@@ -3,3 +3,9 @@ export interface IColor {
   green: number
   blue: number
 }
+
+function f(name: keyof IColor): keyof IColor{
+  return name
+}
+
+f('red')
