@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import styles from './ToDo.module.less';
 
 interface IProps {
-  value: string
+  value?: string
   onSave: (text: string) => void
 }
 
