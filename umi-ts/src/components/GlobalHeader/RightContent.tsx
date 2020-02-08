@@ -7,7 +7,7 @@ import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
 import SelectLang from '../SelectLang';
 import styles from './index.less';
-
+import NoticeIconView from './NoticeIconView';
 export type SiderTheme = 'light' | 'dark';
 export interface GlobalHeaderRightProps extends ConnectProps {
   theme?: SiderTheme;
@@ -29,7 +29,10 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
         placeholder="站内搜索"
         defaultValue="umi ui"
         options={[
-          { label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>, value: 'umi ui' },
+          {
+            label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>,
+            value: 'umi ui',
+          },
           {
             label: <a href="next.ant.design">Ant Design</a>,
             value: 'Ant Design',
@@ -42,8 +45,7 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
             label: <a href="https://prolayout.ant.design/">Pro Layout</a>,
             value: 'Pro Layout',
           },
-        ]}
-        // onSearch={value => {
+        ]} // onSearch={value => {
         //   //console.log('input', value);
         // }}
       />
@@ -57,7 +59,8 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
           <QuestionCircleOutlined />
         </a>
       </Tooltip>
-      <Avatar />
+      <NoticeIconView />
+      <Avatar menu />
       <SelectLang className={styles.action} />
     </div>
   );

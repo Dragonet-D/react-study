@@ -9,7 +9,7 @@ import LoginItem, { LoginItemProps } from './LoginItem';
 import LoginSubmit from './LoginSubmit';
 import LoginTab from './LoginTab';
 import styles from './index.less';
-import { LoginParamsType } from '@/services/login';
+import { LoginParamsType } from '../../service';
 
 export interface LoginProps {
   activeKey?: string;

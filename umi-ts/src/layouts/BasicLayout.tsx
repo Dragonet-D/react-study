@@ -8,6 +8,7 @@ import ProLayout, {
   BasicLayoutProps as ProLayoutProps,
   Settings,
   DefaultFooter,
+  SettingDrawer,
 } from '@ant-design/pro-layout';
 import { formatMessage } from 'umi-plugin-react/locale';
 import React, { useEffect } from 'react';
@@ -21,7 +22,6 @@ import RightContent from '@/components/GlobalHeader/RightContent';
 import { ConnectState } from '@/models/connect';
 import { isAntDesignPro, getAuthorityFromRouter } from '@/utils/utils';
 import logo from '../assets/logo.svg';
-
 const noMatch = (
   <Result
     status="403"
@@ -148,48 +148,59 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
     authority: undefined,
   };
   return (
-    <ProLayout
-      logo={logo}
-      formatMessage={formatMessage}
-      menuHeaderRender={(logoDom, titleDom) => (
-        <Link to="/">
-          {logoDom}
-          {titleDom}
-        </Link>
-      )}
-      onCollapse={handleMenuCollapse}
-      menuItemRender={(menuItemProps, defaultDom) => {
-        if (menuItemProps.isUrl || menuItemProps.children || !menuItemProps.path) {
-          return defaultDom;
-        }
+    <>
+      <ProLayout
+        logo={logo}
+        formatMessage={formatMessage}
+        menuHeaderRender={(logoDom, titleDom) => (
+          <Link to="/">
+            {logoDom}
+            {titleDom}
+          </Link>
+        )}
+        onCollapse={handleMenuCollapse}
+        menuItemRender={(menuItemProps, defaultDom) => {
+          if (menuItemProps.isUrl || menuItemProps.children || !menuItemProps.path) {
+            return defaultDom;
+          }
 
-        return <Link to={menuItemProps.path}>{defaultDom}</Link>;
-      }}
-      breadcrumbRender={(routers = []) => [
-        {
-          path: '/',
-          breadcrumbName: '首页',
-        },
-        ...routers,
-      ]}
-      itemRender={(route, params, routes, paths) => {
-        const first = routes.indexOf(route) === 0;
-        return first ? (
-          <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
-        ) : (
-          <span>{route.breadcrumbName}</span>
-        );
-      }}
-      footerRender={footerRender}
-      menuDataRender={menuDataRender}
-      rightContentRender={() => <RightContent />}
-      {...props}
-      {...settings}
-    >
-      <Authorized authority={authorized!.authority} noMatch={noMatch}>
-        {children}
-      </Authorized>
-    </ProLayout>
+          return <Link to={menuItemProps.path}>{defaultDom}</Link>;
+        }}
+        breadcrumbRender={(routers = []) => [
+          {
+            path: '/',
+            breadcrumbName: '首页',
+          },
+          ...routers,
+        ]}
+        itemRender={(route, params, routes, paths) => {
+          const first = routes.indexOf(route) === 0;
+          return first ? (
+            <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
+          ) : (
+            <span>{route.breadcrumbName}</span>
+          );
+        }}
+        footerRender={footerRender}
+        menuDataRender={menuDataRender}
+        rightContentRender={() => <RightContent />}
+        {...props}
+        {...settings}
+      >
+        <Authorized authority={authorized!.authority} noMatch={noMatch}>
+          {children}
+        </Authorized>
+      </ProLayout>
+      <SettingDrawer
+        settings={settings}
+        onSettingChange={config =>
+          dispatch({
+            type: 'settings/changeSetting',
+            payload: config,
+          })
+        }
+      />
+    </>
   );
 };
 

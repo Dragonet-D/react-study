@@ -6,7 +6,7 @@ import { FormItemProps } from 'antd/es/form/FormItem';
 import ItemMap from './map';
 import LoginContext, { LoginContextProps } from './LoginContext';
 import styles from './index.less';
-import { getFakeCaptcha } from '@/services/login';
+import { getFakeCaptcha } from '../../service';
 
 export type WrappedLoginItemProps = LoginItemProps;
 export type LoginItemKeyType = keyof typeof ItemMap;
