@@ -1,0 +1,20 @@
+.wrapper {
+  cursor: pointer;
+}
+.card {
+  position: relative;
+  &:hover {
+    .mask {
+      display: flex;
+    }
+  }
+}
+.mask {
+  position: absolute;
+  z-index: 1;
+  width: 70px;
+  height: 40px;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}

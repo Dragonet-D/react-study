@@ -1,0 +1,41 @@
+.wrapper {
+  cursor: pointer;
+}
+.card {
+  position: relative;
+  &:hover {
+    .mask {
+      display: flex;
+    }
+  }
+}
+.mask {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.content {
+  padding: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 99.99%;
+  &:last-child {
+    padding-bottom: 8px;
+  }
+}
+.no_name {
+  height: 36px;
+}
+.image_name {
+  text-align: center;
+  width: 99.99%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px;
+}
