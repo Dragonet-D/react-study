@@ -1,2 +1,0 @@
-export const DRAG_TYPE = 'MAP/TREE/DRAG';
-export const PTZ_CONTROL_MINIMUM_INTERVAL = 2 * 1000;
