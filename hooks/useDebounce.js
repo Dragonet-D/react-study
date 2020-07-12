@@ -30,3 +30,22 @@ function App() {
       </div>
   )
 }
+
+function useDebounce1(value, delay) {
+
+  const [debounceVal, setDebounceVal] = useState(value)
+
+  useEffect(() => {
+
+    const timer = setTimeout(() => {
+      setDebounceVal(value)
+    }, [delay])
+
+    return () => {
+      clearTimeout(timer)
+    }
+
+  }, [value, delay])
+
+  return debounceVal
+}
