@@ -25,3 +25,6 @@ if (
 ```
 callComponentWillReceiveProps方法会调用componentWillReceiveProps
 
+所以不是每次props的更新都会执行
+
+unsafe的原因是react换了架构; 可能会导致多次更新;
