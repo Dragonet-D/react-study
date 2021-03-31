@@ -328,6 +328,12 @@ export default {
               ],
             },
             {
+              path: '/test',
+              icon: 'smile',
+              name: 'test',
+              component: './test',
+            },
+            {
               path: '/',
               redirect: '/dashboard/analysis',
               authority: ['admin', 'user'],
