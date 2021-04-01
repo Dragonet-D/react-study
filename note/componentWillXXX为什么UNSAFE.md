@@ -28,3 +28,9 @@ callComponentWillReceiveProps方法会调用componentWillReceiveProps
 所以不是每次props的更新都会执行
 
 unsafe的原因是react换了架构; 可能会导致多次更新;
+
+### Concurrent (同时) 调度模式
+
+特点是任何一个更新任务都可以被更高优先级中断插队, 在高优先级任务执行之后再执行;
+
+"同时执行多个更新任务"指的是同时将多个更新任务添加到React调度的任务队列中,然后React会一个个执行, 而不是类似多线程同时工作那种方式;
