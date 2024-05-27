@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import './App.css';
+import './App.css'
+import A from './test/a'
 
 function f() {
   return Promise.resolve(122)
@@ -11,21 +12,22 @@ function App() {
 
   const handleClick = () => {
     f().then(() => {
-      setCount(e => e + 1)
-      setCount1(e => e + 2)
+      setCount((e) => e + 1)
+      setCount1((e) => e + 2)
     })
   }
 
-  console.log('render');
+  console.log('render')
 
   return (
     <div className="App">
+      <A />
       <header className="App-header">
         {`${count} - ${count1}`}
         <button onClick={handleClick}>test count</button>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
