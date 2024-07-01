@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useLayoutEffect } from 'react'
 
 function A() {
   const [state] = useState(0)
@@ -7,8 +7,12 @@ function A() {
   console.log(1)
 
   // effect 中打印
-  useEffect(() => {
+  useLayoutEffect(() => {
     console.log(2)
+  }, [state])
+
+  useEffect(() => {
+    console.log(2.1)
   }, [state])
 
   // micro task 中 log
