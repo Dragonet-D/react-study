@@ -1,4 +1,5 @@
 import { memo } from 'react'
+import { isEqual } from 'radash'
 import C from './c'
 
 const B = () => {
@@ -11,4 +12,9 @@ const B = () => {
   )
 }
 
-export default memo(B)
+export default memo(B, (pre, next) => {
+  console.log(pre, next)
+  console.log(isEqual(pre, next))
+
+  return isEqual(pre, next)
+})

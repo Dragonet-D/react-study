@@ -10,6 +10,8 @@ specifiers:
   eslint: ^8.57.0
   eslint-plugin-react-hooks: ^4.6.2
   eslint-plugin-react-refresh: ^0.4.7
+  lodash: ^4.17.21
+  radash: ^12.1.0
   react: ^18.3.1
   react-dom: ^18.3.1
   react-router-dom: ^6.24.1
@@ -18,6 +20,8 @@ specifiers:
 
 dependencies:
   antd: 5.19.1_react-dom@18.3.1+react@18.3.1
+  lodash: 4.17.21
+  radash: 12.1.0
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1
   react-router-dom: 6.24.1_react-dom@18.3.1+react@18.3.1
@@ -1795,6 +1799,10 @@ packages:
     resolution: {integrity: sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=}
     dev: true
 
+  /lodash/4.17.21:
+    resolution: {integrity: sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=}
+    dev: false
+
   /loose-envify/1.4.0:
     resolution: {integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=}
     hasBin: true
@@ -1942,6 +1950,11 @@ packages:
   /queue-microtask/1.2.3:
     resolution: {integrity: sha1-SSkii7xyTfrEPg77BYyve2z7YkM=}
     dev: true
+
+  /radash/12.1.0:
+    resolution: {integrity: sha512-b0Zcf09AhqKS83btmUeYBS8tFK7XL2e3RvLmZcm0sTdF1/UUlHSsjXdCcWNxe7yfmAlPve5ym0DmKGtTzP6kVQ==}
+    engines: {node: '>=14.18.0'}
+    dev: false
 
   /rc-cascader/3.27.0_react-dom@18.3.1+react@18.3.1:
     resolution: {integrity: sha512-z5uq8VvQadFUBiuZJ7YF5UAUGNkZtdEtcEYiIA94N/Kc2MIKr6lEbN5HyVddvYSgwWlKqnL6pH5bFXFuIK3MNg==}

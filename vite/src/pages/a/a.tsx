@@ -7,7 +7,8 @@ const A = () => {
 
   const memoState = useMemo(() => state, [state])
 
-  const onClick = useCallback(() => {}, [])
+  // const onClick = useCallback(() => {}, [])
+  const onClick = () => {}
 
   const value = [1, 2, 3]
 
