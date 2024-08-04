@@ -8,10 +8,11 @@ const A = () => {
 
   const memoState = useMemo(() => state, [state])
 
-  // const onClick = useCallback(() => {}, [])
-  const onClick = () => {}
+  const onClick = useCallback(() => {}, [])
+  // const onClick = () => {}
 
-  const value = [1, 2, 3]
+  // const value = [1, 2, 3]
+  const value = useMemo(() => [1, 2], [])
 
   const c = useCallback(() => <C />, [])
 
@@ -19,7 +20,6 @@ const A = () => {
     <div>
       <Button onClick={() => setState(state + 1)}>Click {state}</Button>
       <B onClick={onClick} value={value} />
-      {c()}
     </div>
   )
 }

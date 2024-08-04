@@ -6,7 +6,10 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: ['babel-plugin-react-compiler'],
+        plugins: [
+          // 'eslint-plugin-react-compiler',
+          'babel-plugin-react-compiler',
+        ],
       },
     }),
   ],
