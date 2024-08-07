@@ -10,12 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-compiler-runtime": "file:./lib/react-compiler-runtime",
-    "antd": "^5.19.1",
     "lodash": "^4.17.21",
     "radash": "^12.1.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "19.0.0-rc-df5f2736-20240712",
+    "react-dom": "19.0.0-rc-df5f2736-20240712",
     "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
@@ -24,7 +22,7 @@
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "@vitejs/plugin-react": "^4.3.1",
-    "babel-plugin-react-compiler": "^0.0.0-experimental-c23de8d-20240515",
+    "babel-plugin-react-compiler": "0.0.0-experimental-334f00b-20240725",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",

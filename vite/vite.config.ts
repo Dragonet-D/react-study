@@ -8,12 +8,8 @@ export default defineConfig({
     react({
       babel: {
         plugins: [
-          // [
-          //   'babel-plugin-react-compiler',
-          //   {
-          //     runtimeModule: 'react-compiler-runtime',
-          //   },
-          // ],
+          'babel-plugin-react-compiler',
+          // 'eslint-plugin-react-compiler',
         ],
       },
     }),

@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react'
-import { Button } from 'antd'
 import B from './components/b'
 import C from './components/c'
 
@@ -18,7 +17,7 @@ const A = () => {
 
   return (
     <div>
-      <Button onClick={() => setState(state + 1)}>Click {state}</Button>
+      <button onClick={() => setState(state + 1)}>Click {state}</button>
       <B onClick={onClick} value={value} />
     </div>
   )
