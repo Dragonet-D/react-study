@@ -1,8 +1,11 @@
-# React + Vite
+## 1, 背景
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![图片](./imgs/image.png)
 
-Currently, two official plugins are available:
+## 2, 是什么
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+是一个插件, babel-plugin-react-compiler
+
+## 3, 工作原理
+
+React Forget 可以生成等效于 useMemo、React.memo 的代码，并不意味着编译后的代码会出现上述 API，而是会出现「效果等效于上述 API」的辅助代码。

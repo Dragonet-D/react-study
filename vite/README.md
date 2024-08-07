@@ -5,7 +5,9 @@
 
 1. 2021 年提出此方案 [react conf 2021](), 到现在 2024 年 react 19 里面已经改成了 compiler
 
-## React Complier 做了什么？
+## 1, 背景
+
+防止 useMemo, useCallback 的滥用, 便于理解和调试, 一劳永逸地解决这个问题
 
 1. 解决父组件更新导致的子组件的 re-render
 2.
