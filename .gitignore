@@ -3,5 +3,6 @@ bower_components
 node_modules
 /.idea
 .idea
+.next
 
 .DS_Store

@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import A from './pages/a/a.tsx'
 import Transition from './pages/transition'
+import ToDo from './pages/todo';
 import './index.css'
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     path: 'transition',
     element: <Transition />,
   },
+  {
+    path: 'todo',
+    element: <ToDo />
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
