@@ -4,7 +4,7 @@
 
 ## 2, 是什么
 
-是一个插件, babel-plugin-react-compiler
+是一个 babel 插件, babel-plugin-react-compiler
 
 ## 3, 工作原理
 
