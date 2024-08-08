@@ -1,35 +1,17 @@
+## React Forget (React Complier)
+
+[react-compiler](https://juejin.cn/post/7372523264067043337?searchId=2024071515284169F4A8C2D23A47D9F208)
+[react compiler playground](https://playground.react.dev/)
+[ins 主页](https://www.instagram.com/zuck/?hl=en)
+
+1. 2021 年提出此方案 [react conf 2021](), 到现在 2024 年 react 19 里面已经改成了 compiler
+
 ## 1, 背景
 
-![图片](./imgs/image.png)
+防止 useMemo, useCallback 的滥用, 便于理解和调试, 一劳永逸地解决这个问题
 
-## 2, 是什么
+1. 解决父组件更新导致的子组件的 re-render
+2.
 
-是一个 babel 插件, babel-plugin-react-compiler
-
-## 3, 工作原理
-
-React Forget 可以生成等效于 useMemo、React.memo 的代码，并不意味着编译后的代码会出现上述 API，而是会出现「效果等效于上述 API」的辅助代码。
-
-```react
-function VideoTab({heading, videos, filter}) {
-  const filterdList = [];
-  for (const video of videos) {
-    if (applyFilter(video, filter)) {
-      filterdList.push(video);
-    }
-  }
-  if (filterdList.length === 0) {
-    return <NoVideos />;
-  }
-
-  return (
-    <>
-      <Heading
-        heading={heading}
-        count={filterdList.length}
-      />
-      <VideoList videos={filterdList} />
-    </>
-  )
-}
-```
+3. 目前放在 react 19 RC 里面
+4. 在 <19 版本中使用，添加专门的 polyfill [<19]('https://github.com/reactwg/react-compiler/discussions/6'),
