@@ -13,11 +13,11 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/a',
+    path: '/a', // base demo
     element: <A />,
   },
   {
-    path: '/b',
+    path: '/b', // hooks 缓存
     element: <B />,
   },
   {
