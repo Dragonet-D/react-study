@@ -1,10 +1,11 @@
 import { memo, FC } from "react";
 // import { isEqual } from 'radash'
-import C from "./c";
+import D from "./d";
 
 interface Props {
   onClick: () => void;
   value: number[];
+  newProps?: Record<string, string>
 }
 
 const B: FC<Props> = () => {
@@ -13,7 +14,7 @@ const B: FC<Props> = () => {
   return (
     <div>
       B
-      <C />
+      <D />
     </div>
   );
 };
