@@ -1,6 +1,11 @@
+# React Forget (React Compiler)
+
 ## 1, 背景
 
-![图片](./imgs/image.png)
+[你应该在所有地方使用useMemo吗?](https://zh-hans.react.dev/reference/react/useMemo#should-you-add-usememo-everywhere)
+
+- 复杂组件在迭代过程中缓存优化容易遭到破坏
+- 代码可读性差
 
 ## 2, 是什么
 
