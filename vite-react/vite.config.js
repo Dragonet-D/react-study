@@ -14,13 +14,12 @@ export default defineConfig({
     react({
       babel: {
         plugins: [
-            // [
-            //   'babel-plugin-react-compiler',
-            //   {
-            //     runtimeModule: path.resolve(__dirname, './src/useCache'),
-            //   }
-            // ]
-          // 'eslint-plugin-react-compiler',
+            [
+              'babel-plugin-react-compiler',
+              {
+                runtimeModule: path.resolve(__dirname, './src/useCache'),
+              }
+            ]
         ],
       },
     }),

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-export function c(size: number) {
-    const [$] = useState(() => new Array(size))
-    return $
-}
+// export function c(size: number) {
+//     const [$] = useState(() => new Array(size))
+//     return $
+// }
 
 const $empty = Symbol.for('react.memo_cache_sentinel')
 /**
@@ -13,14 +13,14 @@ const $empty = Symbol.for('react.memo_cache_sentinel')
  * from React 19. It is not as efficient and may invalidate more frequently
  * than the official API. Please upgrade to React 19 as soon as you can.
  **/
-// export function c(size) {
-//     return useState(() => {
-//         const $ = new Array(size)
-//         for (let ii = 0; ii < size; ii++) {
-//             $[ii] = $empty
-//         }
-//         // @ts-ignore
-//         $[$empty] = true
-//         return $
-//     })[0]
-// }
+export function c(size) {
+    return useState(() => {
+        const $ = new Array(size)
+        for (let ii = 0; ii < size; ii++) {
+            $[ii] = $empty
+        }
+        // @ts-ignore
+        $[$empty] = true
+        return $
+    })[0]
+}

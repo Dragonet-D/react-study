@@ -1,9 +1,7 @@
 import { memo } from 'react'
-// import { isEqual } from 'radash'
-import C from './c'
 
 const B = () => {
-  console.log('B')
+  console.log('B rerender')
 
   return <div>b</div>
 }

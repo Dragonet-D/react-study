@@ -1,7 +1,7 @@
-import { memo, useEffect } from 'react'
+import { useEffect } from 'react'
 
 const C = () => {
-  console.log('C')
+  console.log('C rerender')
   useEffect(() => {
     console.log('123')
   }, [])

@@ -11,12 +11,12 @@ const A = () => {
   // const value = [1, 2, 3]
   const value = useMemo(() => [1, 2], []);
 
-  // const newProps = { a: "1" };
+  const newProps = { a: "1" };
 
   return (
     <div>
       <button onClick={() => setState(state + 1)}>Click {state}</button>
-      <B onClick={onClick} value={value} />
+      <B onClick={onClick} value={value} newProps={newProps} />
       <C />
     </div>
   );

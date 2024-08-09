@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <B />,
   },
   {
-    path: '/c',
+    path: '/c', // 编译后的代码缓存
     element: <C />,
   }
 ])
