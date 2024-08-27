@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState, useEffect } from 'react'
 import B from './components/b'
 import C from './components/c'
 
@@ -10,6 +10,10 @@ const A = () => {
   const value = useMemo(() => [1, 2], [])
 
   const c = useCallback(() => <C />, [])
+
+  useEffect(() => {
+    console.log('a')
+  }, [])
 
   return (
     <div>
